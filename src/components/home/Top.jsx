@@ -1,0 +1,33 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Section } from '../../assets/styles/components/top'
+import ImgTOP from '../../assets/images/PERFILOF.png'
+
+export function Top() {
+  return (
+    <Section>
+      <div className="container">
+        <div className="row">
+
+          <div className="col-md-6">
+            <div className="top">
+              <h1>Pedro Nunes</h1>
+              <p>Sou desenvolvedor Web</p>
+              <div className="top-links">
+                <a href="https://wa.me/qr/OZWPJVZZLJ2WG1" target="_blank">Saiba mais</a>
+                <Link to={'/projects'}>Projetos</Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-6">
+            <div className="top-img">
+              <img src={ImgTOP} alt="" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </Section>
+  )
+}
