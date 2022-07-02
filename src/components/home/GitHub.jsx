@@ -35,27 +35,29 @@ export function GitHub() {
 
   return (
     <div>
-
-      <div>
-        <img src={userGit.avatar_url} alt="Foto do github" />
-        <h3>{userGit.login}</h3>
-        <p>{userGit.bio}</p>
+      <div className="container">
+        <div className="row">
+          <p className="text-danger px-2">{errorMsg}</p>
+          <div className="col-md-6">
+            <img src={userGit.avatar_url} alt="Foto do github" />
+            <h3>{userGit.login}</h3>
+            <p>{userGit.bio}</p>
+          </div>
+          <div className="col-md-6">
+            <ul>
+              { isFetching && <p>Carregando...</p> }
+              {repositories?.slice(0, 4).map(repo => {
+                return(
+                  <li key={repo.full_name}>
+                    <strong>{repo.full_name}</strong>
+                    <p>{repo.description}</p>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        </div>
       </div>
-      <p className="text-danger px-2">{errorMsg}</p>
-      <div>
-        <ul>
-          { isFetching && <p>Carregando...</p> }
-          {repositories?.slice(0, 4).map(repo => {
-            return(
-              <li key={repo.full_name}>
-                <strong>{repo.full_name}</strong>
-                <p>{repo.description}</p>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-      
     </div>
   )
 }
