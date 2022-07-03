@@ -3,7 +3,7 @@ import React from 'react'
 export function About() {
 
   const today = new Date()
-  const dateInit = new Date('2020-05-12')
+  const dateInit = new Date('2021-05-12')
   const difference = Math.abs((today.getTime() - dateInit.getTime()))
   const year = Math.ceil(difference / (1000 * 60 * 60 * 24 * 365))
 

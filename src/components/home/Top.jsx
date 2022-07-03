@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Section } from '../../assets/styles/components/top'
 import ImgTOP from '../../assets/images/PERFILOF.png'
+import { TopSection } from '../../assets/styles/components/top'
 
 export function Top() {
   return (
-    <Section>
+    <TopSection>
       <div className="container">
         <div className="row">
 
@@ -28,6 +28,6 @@ export function Top() {
 
         </div>
       </div>
-    </Section>
+    </TopSection>
   )
 }
