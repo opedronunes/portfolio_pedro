@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const TopSection = styled.section`
 display: flex;
 align-items: center;
@@ -9,11 +11,6 @@ h1
 {
     font-size: 2.8rem;
     font-weight: 700;
-}
-
-strong
-{
-    color: var(--color-green2);
 }
 
 .top-links

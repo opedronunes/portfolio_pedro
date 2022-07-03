@@ -9,7 +9,7 @@ export const HeaderStyled = styled.header`
     .logo a
     {
     text-decoration: none;
-    color: var(--color-green1);
+    color: var(--color-text);
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -37,7 +37,7 @@ ul
 li a
 {
     text-decoration: none;
-    color: var(--color-green1);
+    color: var(--color-text);
     padding: 15px 10px;
     line-height: 70px;
     font-size: 1.2rem;

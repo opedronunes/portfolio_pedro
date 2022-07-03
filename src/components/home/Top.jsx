@@ -10,8 +10,8 @@ export function Top() {
         <div className="row">
           <div className="col-md-6">
             <div className="top">
-              <h1><strong>P</strong>edro <strong>N</strong>unes</h1>
-              <p>Sou desenvolvedor Web</p>
+              <h1>Pedro Nunes</h1>
+              <strong>Sou desenvolvedor Web</strong>
               <div className="top-links">
                 <a href="https://wa.me/qr/OZWPJVZZLJ2WG1" target="_blank">Saiba mais</a>
                 <Link to={'/projects'}>Projetos</Link>

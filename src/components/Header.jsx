@@ -15,7 +15,7 @@ export function Header() {
                 <Navbar>
                     <div className="logo">
                         <Link to={'/'}>
-                            Web Developer
+                        {"<Web Developer/>"}
                         </Link>
                     </div>
                     

@@ -11,6 +11,7 @@ section
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .techIcons
 {
     display: flex;
@@ -27,7 +28,7 @@ section
 
 .icon
 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--color-white);
     transition: all .3s;
 }

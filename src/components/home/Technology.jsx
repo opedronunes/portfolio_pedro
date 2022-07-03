@@ -11,10 +11,10 @@ export function Technology() {
             <div className="container">
                 <section>
                     {data.map((tech) => (
-                        <div className="techIcons" key={tech.text}>
-                            <div className="icon">{tech.Icon}</div>
-                            <p>{tech.text}</p>
-                        </div>
+                      <div className="techIcons" key={tech.text}>
+                          <div className="icon">{tech.Icon}</div>
+                          <p>{tech.text}</p>
+                      </div>
                     ))}
                 </section>
             </div>
