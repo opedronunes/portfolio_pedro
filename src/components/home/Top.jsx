@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ImgTOP from '../../assets/images/PERFILOF.png'
+import ImgTOP from '../../assets/images/cartoon-dev.png'
 import { TopSection } from '../../assets/styles/components/top'
 
 export function Top() {
@@ -8,10 +8,9 @@ export function Top() {
     <TopSection>
       <div className="container">
         <div className="row">
-
           <div className="col-md-6">
             <div className="top">
-              <h1>Pedro Nunes</h1>
+              <h1><strong>P</strong>edro <strong>N</strong>unes</h1>
               <p>Sou desenvolvedor Web</p>
               <div className="top-links">
                 <a href="https://wa.me/qr/OZWPJVZZLJ2WG1" target="_blank">Saiba mais</a>
@@ -25,7 +24,6 @@ export function Top() {
               <img src={ImgTOP} alt="" />
             </div>
           </div>
-
         </div>
       </div>
     </TopSection>

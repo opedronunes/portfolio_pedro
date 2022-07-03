@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
-import { GitPerfil, GitRepo } from "../../assets/styles/components/git";
+import { Git, GitPerfil, GitRepo } from "../../assets/styles/components/git";
 import { useFetch } from "../../hooks/useFetch"
 
 
@@ -15,6 +15,10 @@ export function GitHub() {
 
   useEffect(() => {
     getApiUser()
+  })
+
+  const api = axios.create({
+    baseURL: 'https://api.github.com/'
   })
 
   function getApiUser(){
@@ -33,13 +37,10 @@ export function GitHub() {
 
   }
 
-  const api = axios.create({
-    baseURL: 'https://api.github.com/'
-  })
-
   return (
-    <div>
+    <Git>
       <div className="container">
+        <h2 className="title">GitHub</h2>
         <div className="row">
           <p className="text-danger px-2">{errorMsg}</p>
           <div className="col-md-6">
@@ -50,26 +51,31 @@ export function GitHub() {
             </GitPerfil>
           </div>
           <div className="col-md-6">
-            <ul>
-              { isFetching && <p>Carregando...</p> }
-              {repositories?.slice(0, 4).map(repo => {
-                return(
-                  <GitRepo>
-                    <li className="card-repo" key={repo.full_name}>
-                      <Link to={repo.html_url} target="_blank" rel="noreferrer">
-                        <strong className="card-title">{repo.name}</strong>
-                      </Link>
-                      <p>{repo.description}</p>
-                      <p>{repo.repos_url}</p>
-                    </li>
-                  </GitRepo>
-                )
-              })}
-            </ul>
-            <span>Repositórios: {userGit.public_repos}+</span>
+            <div className="repo">
+              <ul>
+                { isFetching && <p>Carregando...</p> }
+                {repositories?.slice(0, 4).map(repo => {
+                  return(
+                    <GitRepo>
+                      <li className="card-repo" key={repo.full_name}>
+                        <Link to={repo.html_url} target="_blank" rel="noreferrer">
+                          <strong className="card-title">{repo.name}</strong>
+                        </Link>
+                        <p>{repo.description}</p>
+                      </li>
+                    </GitRepo>
+                  )
+                })}
+              </ul>
+              <div className="card-rodape">
+                <strong>Repositórios: {userGit.public_repos} +</strong>
+                <a href="https://github.com/PedroNunes-Dev?tab=repositories" target="_blank" rel="noreferrer">Ver todos</a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Git>
   )
 }

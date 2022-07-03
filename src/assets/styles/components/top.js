@@ -4,7 +4,17 @@ export const TopSection = styled.section`
 display: flex;
 align-items: center;
 padding: 20px 0;
-border: 1px solid green;
+
+h1
+{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+strong
+{
+    color: var(--color-green2);
+}
 
 .top-links
 {
@@ -31,7 +41,7 @@ border: 1px solid green;
     display: flex;
     justify-content: center;
     height: 100%;
-    border: 1px solid red;
+    margin: 10px;
 } 
 .top
 {

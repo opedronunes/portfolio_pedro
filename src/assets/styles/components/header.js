@@ -6,6 +6,15 @@ export const HeaderStyled = styled.header`
     align-items: center;
     height: 70px;
 
+    .logo a
+    {
+    text-decoration: none;
+    color: var(--color-green1);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    }
+
 `
 export const Navbar = styled.div`
 display: flex;
@@ -28,9 +37,18 @@ ul
 li a
 {
     text-decoration: none;
-    color: var(--txt-primary);
+    color: var(--color-green1);
     padding: 15px 10px;
     line-height: 70px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+li a:hover
+{
+    opacity: 0.8;
 }
 `
 

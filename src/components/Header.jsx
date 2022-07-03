@@ -13,9 +13,9 @@ export function Header() {
         <HeaderStyled>
             <div className="container">
                 <Navbar>
-                    <div>
-                        <Link to={'/'} className="">
-                            Logo
+                    <div className="logo">
+                        <Link to={'/'}>
+                            Web Developer
                         </Link>
                     </div>
                     

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Tech = styled.section`
 display: flex;
 padding: 20px 0;
-border: 1px solid green;
 
 section
 {

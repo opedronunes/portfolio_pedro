@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 :root
@@ -28,4 +28,12 @@ body
     color: var(--color-text);
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.title
+{
+    color: var(--color-green1);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 `

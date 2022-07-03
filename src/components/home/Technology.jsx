@@ -7,7 +7,7 @@ export function Technology() {
     <Tech>
       <div className="container">
         <div className="tech">
-          <h1>Tecnologias</h1>
+          <h2 className="title"> Tecnologias</h2>
             <div className="container">
                 <section>
                     {data.map((tech) => (
