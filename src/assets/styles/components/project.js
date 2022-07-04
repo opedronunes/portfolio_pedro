@@ -17,12 +17,58 @@ display: flex;
 flex-direction: column;
 max-width: 400px;
 padding: 8px;
-border-radius: 24px;
+border-radius: 16px;
 background: var(--color-gray1);
 
 img
 {
     width: 100%;
-    border-radius: 16px;
+    border-radius: 8px 8px 0px 0px;
+}
+h4
+{
+    font-weight: 700;
+    padding: 8px 0;
+}
+p
+{
+    height: 100%;
+}
+p, .tech-card
+{
+    margin: 0;
+    padding: 8px 0;
+    color: var(--color-gray2);
+}
+.tech-card
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.link-card
+{
+    display: flex;
+    gap: 8px;
+}
+
+.link-card a
+{
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--color-gray2);
+    color: var(--color-text);
+    transition: all .3s;
+    width: 100%;
+    text-align: center;
+}
+
+.link-card a:hover
+{
+    background: var(--color-gray2);
+    color: var(--color-gray1);
 }
 `
