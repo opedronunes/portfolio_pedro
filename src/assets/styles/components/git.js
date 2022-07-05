@@ -59,6 +59,16 @@ h3
     color: var(--color-green1);
     font-weight: 700;
 }
+
+img
+{
+    max-width: 400px;
+    border-radius: 50%;
+    border: 1px solid var(--color-green1);
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0px 0px 12px 2px var(--color-green1);
+}
 `
 export const GitRepo = styled.div`
 

@@ -38,15 +38,15 @@ h1
     display: flex;
     justify-content: center;
     height: 100%;
-    margin: 10px;
 } 
 .top
 {
     flex-direction: column;
 }
-.top-img
+.top-img img
 {   
-    align-items: center;
+    max-width: 400px;
+    width: 100%;
 }
 @keyframes pulse
 {

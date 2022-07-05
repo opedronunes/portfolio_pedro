@@ -21,9 +21,9 @@ export function GitHub() {
     baseURL: 'https://api.github.com/'
   })
 
-  function getApiUser(){
+   async function getApiUser(){
     
-    api.get('users/PedroNunes-Dev', {
+     await api.get('users/PedroNunes-Dev', {
 
     })
       .then(response => {
