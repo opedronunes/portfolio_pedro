@@ -71,6 +71,7 @@ ul
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s ease;
 }
 .hamburger
 {
@@ -96,5 +97,15 @@ ul
 .link-mobile a
 {
     text-decoration: none;
+    color: var(--color-green1);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+
+.link-mobile a:hover
+{
+    opacity: 0.8;
 }
 `
