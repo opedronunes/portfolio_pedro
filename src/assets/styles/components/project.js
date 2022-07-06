@@ -56,6 +56,10 @@ p, .tech-card
 
 .link-card a
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
     text-decoration: none;
     padding: 8px 18px;
     border-radius: 8px;
@@ -63,7 +67,6 @@ p, .tech-card
     color: var(--color-text);
     transition: all .3s;
     width: 100%;
-    text-align: center;
 }
 
 .link-card a:hover

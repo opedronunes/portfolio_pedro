@@ -87,6 +87,8 @@ padding: 8px;
 
 .card-repo a
 {
+    display: flex;
+    gap: 5px;
     text-decoration: none;
     margin: 0;
     color: var(--color-green1);

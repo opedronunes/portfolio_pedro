@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import { Git, GitPerfil, GitRepo } from "../../assets/styles/components/git";
 import { useFetch } from "../../hooks/useFetch"
+import { BiCodeAlt } from 'react-icons/bi'
 
 
 
@@ -31,7 +32,7 @@ export function GitHub() {
       })
       .catch(error => {
         console.log(error)
-        setErrorMsg("GitHub temporariamente fora de serviço!")
+        setErrorMsg("Oops, esperando dados do GitHub!")
       });
       
 
@@ -58,9 +59,10 @@ export function GitHub() {
                   return(
                     <GitRepo>
                       <li className="card-repo" key={repo.full_name}>
-                        <Link to={repo.html_url} target="_blank" rel="noreferrer">
+                        <a href={repo.html_url} target="_blank" rel="noreferrer">
+                          <BiCodeAlt size={30} />
                           <strong className="card-title">{repo.name}</strong>
-                        </Link>
+                        </a>
                         <p>{repo.description}</p>
                       </li>
                     </GitRepo>

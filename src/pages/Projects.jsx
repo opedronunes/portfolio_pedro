@@ -1,6 +1,8 @@
 import React from 'react'
 import {data} from '../data/projects'
 import { Card, CardProject, Project } from '../assets/styles/components/project'
+import { BiGitBranch } from 'react-icons/bi'
+import { TbWorldUpload } from 'react-icons/tb'
 
 export function Projects() {
   return (
@@ -15,8 +17,8 @@ export function Projects() {
               <div className="tech-card">{project.technologies}</div>
               <p>{project.description}</p>
               <div className="link-card">
-                <a href={project.githublink} target="_blank" rel="noreferrer">GitHub</a>
-                <a href={project.deploylink} target="_blank" rel="noreferrer">Site</a>
+                <a href={project.githublink} target="_blank" rel="noreferrer"><BiGitBranch size={19} /> GitHub</a>
+                <a href={project.deploylink} target="_blank" rel="noreferrer"><TbWorldUpload size={19} /> Site</a>
               </div>
             </CardProject>
           ))}
