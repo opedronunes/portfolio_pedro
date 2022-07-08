@@ -19,6 +19,7 @@ max-width: 400px;
 padding: 8px;
 border-radius: 16px;
 background: var(--color-gray1);
+box-shadow: var(--shadow);
 
 img
 {

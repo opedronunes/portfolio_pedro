@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ImgTOP from '../../assets/images/cartoon-dev.png'
+import Cartoon from '../../assets/images/cartoon.png'
 import { TopSection } from '../../assets/styles/components/top'
 
 export function Top() {
@@ -21,7 +22,7 @@ export function Top() {
 
           <div className="col-md-6">
             <div className="top-img">
-              <img src={ImgTOP} alt="" />
+              <img src={Cartoon} alt="" />
             </div>
           </div>
         </div>

@@ -1,7 +1,9 @@
 import rusch from '../assets/images/rusch.png'
+import estetica from '../assets/images/estetica.png'
 import * as FaIcons from 'react-icons/fa'
 
 export const data = [
+    
 
     {
         id: 1,
@@ -23,6 +25,15 @@ export const data = [
     },
     {
         id: 3,
+        title: "Estética Automotiva",
+        image: estetica,
+        technologies: [<FaIcons.FaHtml5/>, <FaIcons.FaJs/>, <FaIcons.FaCss3Alt/>, <FaIcons.FaBootstrap/>],
+        githublink: "https://github.com/PedroNunes-Dev/estetica-automotiva",
+        deploylink: "https://erisvaldoea.netlify.app/",
+        description: "Trabalho realizado para um amigo, aliás devemos ajudar pessoas a realizarem seus sonhos."
+    },
+    {
+        id: 4,
         title: "Registro de Usuários",
         image: "https://github.com/PedroNunes-Dev/registro-usuario-react/raw/main/public/screenshot-crud.png",
         technologies: [<FaIcons.FaJs/>, <FaIcons.FaCss3Alt/>, <FaIcons.FaReact/>],
@@ -31,7 +42,7 @@ export const data = [
         description: "Projeto criado durante o curso de ReactJs, ministrado por Leonardo Moura Leitão do Curso Web Moderno Completo."
     },
     {
-        id: 4,
+        id: 5,
         title: "Consumer API Film",
         image: "https://github.com/PedroNunes-Dev/react-api-filmes/raw/main/src/images/React-Api-filmes.gif",
         technologies: [<FaIcons.FaJs/>, <FaIcons.FaCss3Alt/>, <FaIcons.FaReact/>],
@@ -40,7 +51,7 @@ export const data = [
         description: "Projeto criado durante o curso de ReactJs, ministrado por Leonardo Moura Leitão do Curso Web Moderno CompletoEste projeto pequeno foi o primeiro feito com React, para aprendizado e conhecimento da biblioteca."
     },
     {
-        id: 5,
+        id: 6,
         title: "App lista de tarefas",
         image: "https://github.com/PedroNunes-Dev/app_lista_de_tarefas/blob/main/img/home_app_lista_de_tarefa.jpg?raw=true",
         technologies: [<FaIcons.FaPhp/>, <FaIcons.FaCss3Alt/>],

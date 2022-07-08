@@ -12,6 +12,7 @@ export default createGlobalStyle`
     --color-green2: #00875F;
     --color-green3: #015F43;
     --color-red: #f75A68;
+    --shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
 }
 *
 {
