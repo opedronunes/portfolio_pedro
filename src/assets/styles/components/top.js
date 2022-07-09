@@ -45,7 +45,7 @@ h1
 }
 .top-img img
 {   
-    max-width: 400px;
+    max-width: 340px;
     width: 100%;
 }
 @keyframes pulse

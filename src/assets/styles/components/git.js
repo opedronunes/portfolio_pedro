@@ -62,11 +62,11 @@ h3
 
 img
 {
-    max-width: 400px;
+    max-width: 380px;
     border-radius: 50%;
     border: 1px solid var(--color-green1);
     width: 100%;
-    padding: 5px;
+    padding: 4px;
     box-shadow: 0px 0px 12px 2px var(--color-green1);
 }
 `

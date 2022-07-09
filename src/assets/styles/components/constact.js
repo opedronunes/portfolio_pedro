@@ -18,8 +18,8 @@ height: 100vh;
 
 .social
 {
-height: 150px;
-width: 140px;
+height: 170px;
+width: 150px;
 margin: 0;
 padding: 0;
 border-radius: 12px;

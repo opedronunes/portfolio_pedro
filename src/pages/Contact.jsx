@@ -21,7 +21,7 @@ export function Contact() {
           </div>
           <div className="col-md-6">
             <form action="">
-              formulario
+              Em construção!
             </form>
           </div>
         </div>
