@@ -1,9 +1,9 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-const api = axios.create({
-    baseURL: 'https://api.github.com/'
-  })
+/*const api = axios.create({
+    baseURL: ''
+  })*/
 
 export function useFetch(url) {
 
@@ -11,7 +11,7 @@ export function useFetch(url) {
     const [isFetching, setIsFetching] = useState(true)
 
     useEffect(() => {
-    api.get(url)
+    axios.get(url)
         .then(response => {
             setData(response.data);
         })

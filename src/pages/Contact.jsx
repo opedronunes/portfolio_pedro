@@ -3,6 +3,7 @@ import { ContactStyled } from '../assets/styles/components/constact'
 import { data } from '../data/social'
 
 export function Contact() {
+
   return (
     <ContactStyled>
       <div className="container">
@@ -20,8 +21,8 @@ export function Contact() {
             </div>
           </div>
           <div className="col-md-6">
-            <form action="">
-              Em construção!
+          <form action="">
+              Em breve formulário!
             </form>
           </div>
         </div>

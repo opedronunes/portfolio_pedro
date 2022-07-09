@@ -9,7 +9,7 @@ import { BiCodeAlt } from 'react-icons/bi'
 
 export function GitHub() {
 
-  const { data: repositories, isFetching } = useFetch ('users/PedroNunes-Dev/repos')
+  const { data: repositories, isFetching } = useFetch ('https://api.github.com/users/PedroNunes-Dev/repos')
   const [userGit, setUserGit] = useState([]);
   const [errorMsg, setErrorMsg] = useState("");
 

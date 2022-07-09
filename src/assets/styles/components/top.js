@@ -43,11 +43,28 @@ h1
 {
     flex-direction: column;
 }
+
 .top-img img
 {   
     max-width: 340px;
     width: 100%;
+    border-radius: 50%;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
 }
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
 @keyframes pulse
 {
     0%{

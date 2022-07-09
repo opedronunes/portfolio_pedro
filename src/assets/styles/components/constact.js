@@ -12,8 +12,6 @@ height: 100vh;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    
-    
 }
 
 .social
