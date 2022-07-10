@@ -15,15 +15,16 @@ export function GitHub() {
 
   useEffect(() => {
     getApiUser()
-  })
+  }, [])
 
-   async function getApiUser(){
+   function getApiUser(){
     
-     await axios.get('https://api.github.com/users/PedroNunes-Dev', {
+     axios.get('https://api.github.com/users/PedroNunes-Dev', {
 
     })
       .then(response => {
         setUserGit(response.data);
+        console.log(response);
       })
       .catch(error => {
         console.log(error)
@@ -40,7 +41,7 @@ export function GitHub() {
         <div className="row">
           <p className="text-danger px-2">{errorMsg}</p>
           <div className="col-md-6">
-            <GitPerfil key={userGit.login}>
+            <GitPerfil key={userGit.id}>
               <img src={userGit.avatar_url} alt="Foto do github" />
               <h3>{userGit.login}</h3>
               <p>{userGit.bio}</p>
@@ -52,8 +53,8 @@ export function GitHub() {
                 { isFetching && <p>Carregando...</p> }
                 {repositories?.slice(0, 4).map(repo => {
                   return(
-                    <GitRepo>
-                      <li key={repo.full_name} className="card-repo">
+                    <GitRepo key={repo.id} >
+                      <li className="card-repo">
                         <a href={repo.html_url} target="_blank" rel="noreferrer">
                           <BiCodeAlt size={30} />
                           <strong className="card-title">{repo.name}</strong>
