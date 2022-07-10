@@ -51,6 +51,9 @@ h1
     border-radius: 50%;
     transform: translatey(0px);
     animation: float 5s ease-in-out infinite;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    
 }
 
 @keyframes float {
