@@ -1,14 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ContactStyled, FormStyled } from '../assets/styles/components/contact'
 import { data } from '../data/social'
-import { useForm } from 'react-hook-form';
+
 
 export function Contact() {
 
-  const { register, formState: { errors }, handleSubmit } = useForm();
+  //const { register, formState: { errors }, handleSubmit } = useForm();
+  //const onSubmit = (data) => console.log(data);
+  /*
+  const handleInputChange = (e) => {
+    console.log('*** handleImputChange', e.target.value);
+    setValue(e.target.value)
+  }
+  */
 
-  const onSubmit = (data) => console.log(data);
+  const [formValues, setFormValues] = useState({});
 
+  const handleInputChange = (e) => {
+    
+    /** Função que gerencia todos os inputs, pegando o name e seus valores */
+    const {name, value} = e.target;
+    setFormValues({...formValues, [name]: value});
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+
+    console.log('*** handleSubmit', data);
+  }
   return (
     <ContactStyled>
       <div className="container">
@@ -27,22 +48,20 @@ export function Contact() {
           </div>
           <div className="col-md-6">
             <FormStyled>
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <form onSubmit={handleSubmit}>
                 <label htmlFor="">
-                  Nome e sobrenome
-                  <input {...register("firstName", { required: true })} />
-                  <span className='text-danger'>{errors.firstName?.type === 'required' && "Oops, Preciso saber seu nome!"}</span>
+                  Nome e sobrenome:
+                  <input type="text" name="name" placeholder="Seu Nome" onChange={handleInputChange} value={formValues.name || ''} required />
                 </label>
 
                 <label>
                   E-mail:
-                  <input {...register("mail", { required: "Email Address is required" })} />
-                  <span className='text-danger'>{errors.mail?.message}</span>
+                  <input type="email" name="email" placeholder="Seu e-mail" onChange={handleInputChange} value={formValues.email || ''} required />
                 </label>
 
                 <label>
-                  Dissertação:
-                  <textarea />
+                  Mensagem:
+                  <textarea type="text" name="description" placeholder="Descreva do que você precisa." onChange={handleInputChange} value={formValues.description || ''} required />
                 </label>
 
                 <button type="submit">

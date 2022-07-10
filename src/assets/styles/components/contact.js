@@ -120,10 +120,18 @@ button {
 
 }
 
-button {
+button[type=submit]
+{
     margin-top: 16px;
+    border: 1px solid transparent;
     background: linear-gradient(75deg, var(--color-green3) 35%, var(--color-green2));
     border-radius: 8px;
+    transition: all .3s;
+}
+button[type=submit]:hover
+{
+    background: none;
+    border: 1px solid var(--color-green2);
 }
 
 input ~ label {
@@ -136,11 +144,12 @@ input ~ label {
     transition: .4s;
 }
 
-input:focus ~ label,
-input:valid ~ label {
+input:focus ~ label
+{
     transform: translateY(-24px);
     font-size: 0.8em;
     letter-spacing: 0.1em;
+    background: none;
 }
 
 form textarea
@@ -152,6 +161,7 @@ form textarea
     padding: 0 10px;
     outline: none;
     box-shadow: none;
+    margin: 10px 0;
 }
 
 `
