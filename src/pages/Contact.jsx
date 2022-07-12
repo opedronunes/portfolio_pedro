@@ -13,7 +13,7 @@ export function Contact() {
     setValue(e.target.value)
   }
   */
-
+  
   const [formValues, setFormValues] = useState({});
 
   const handleInputChange = (e) => {
@@ -21,14 +21,16 @@ export function Contact() {
     /** Função que gerencia todos os inputs, pegando o name e seus valores */
     const {name, value} = e.target;
     setFormValues({...formValues, [name]: value});
+  
   }
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
 
     console.log('*** handleSubmit', data);
+  
   }
   return (
     <ContactStyled>
@@ -49,19 +51,19 @@ export function Contact() {
           <div className="col-md-6">
             <FormStyled>
               <form onSubmit={handleSubmit}>
-                <label htmlFor="">
+                <label htmlFor="name">
                   Nome e sobrenome:
-                  <input type="text" name="name" placeholder="Seu Nome" onChange={handleInputChange} value={formValues.name || ''} required />
+                  <input type="text" id="name" name="name" placeholder="Seu Nome" onChange={handleInputChange} value={formValues.name || ''} required />
                 </label>
 
-                <label>
+                <label htmlFor="email">
                   E-mail:
-                  <input type="email" name="email" placeholder="Seu e-mail" onChange={handleInputChange} value={formValues.email || ''} required />
+                  <input type="email" id="email" name="email" placeholder="Seu e-mail" onChange={handleInputChange} value={formValues.email || ''} required />
                 </label>
 
-                <label>
+                <label htmlFor="description">
                   Mensagem:
-                  <textarea type="text" name="description" placeholder="Descreva do que você precisa." onChange={handleInputChange} value={formValues.description || ''} required />
+                  <textarea type="text" id="description" name="description" placeholder="Descreva do que você precisa." onChange={handleInputChange} value={formValues.description || ''} required />
                 </label>
 
                 <button type="submit">

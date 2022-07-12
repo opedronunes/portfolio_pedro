@@ -24,7 +24,7 @@ export function About() {
               <p>Atualmente estou estudando <strong>Back-End com PHP</strong> e aprimorando meus conhecimentos
               em <strong>banco de dados com Mysql</strong>, para me tornar um <strong>dev Full Stack</strong>. Paralelamente, 
               estou estudando por conta própria <strong>ReactJs e consumo de API's</strong> com os Hooks dessa Biblioteca 
-              para antregar uma aplicação dinâmica e performática.</p>
+              para entregar uma aplicação dinâmica e performática.</p>
           </div>
         </div>
       </div>
