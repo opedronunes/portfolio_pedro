@@ -4,15 +4,6 @@ import { data } from '../data/social'
 
 
 export function Contact() {
-
-  //const { register, formState: { errors }, handleSubmit } = useForm();
-  //const onSubmit = (data) => console.log(data);
-  /*
-  const handleInputChange = (e) => {
-    console.log('*** handleImputChange', e.target.value);
-    setValue(e.target.value)
-  }
-  */
   
   const [formValues, setFormValues] = useState({});
 
