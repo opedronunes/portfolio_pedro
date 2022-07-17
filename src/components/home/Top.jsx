@@ -6,10 +6,10 @@ import ScrollReveal from 'scrollreveal'
 
 export function Top() {
 
-  ScrollReveal().reveal('.top', { 
+  ScrollReveal().reveal('.top-content', { 
     
     delay: 500,
-    distance: '50px',
+    distance: '80px',
     origin: 'left',
     duration: 700,
     reset: true
@@ -19,7 +19,7 @@ export function Top() {
     <TopSection>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className=" top-content col-md-6">
             <div className="top">
               <h1>Pedro Nunes</h1>
               <p>Olá humano!</p>
