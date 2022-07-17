@@ -4,7 +4,6 @@ import { List, X } from 'phosphor-react';
 
 import { HeaderStyled, Navbar, Toogle } from "../assets/styles/components/header"
 
-
 export function Header() {
 
     const [visibility, setVisibility] = useState(false)

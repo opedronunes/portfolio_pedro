@@ -3,16 +3,8 @@ import {data} from '../data/projects'
 import { Card, CardProject, Project } from '../assets/styles/components/project'
 import { BiGitBranch } from 'react-icons/bi'
 import { TbWorldUpload } from 'react-icons/tb'
-import ScrollReveal from 'scrollreveal'
 
 export function Projects() {
-
-  ScrollReveal().reveal('.project', { 
-    
-    delay: 500,
-    duration: 700,
-    reset: true
-  });
 
   return (
     <Project>

@@ -1,19 +1,9 @@
 import React, { useState } from 'react'
 import { ContactStyled, FormStyled } from '../assets/styles/components/contact'
 import { data } from '../data/social'
-import ScrollReveal from 'scrollreveal';
 
 
 export function Contact() {
-
-  ScrollReveal().reveal('.card-social', { 
-    
-    delay: 500,
-    distance: '80px',
-    origin: 'left',
-    duration: 700,
-    reset: true
-  });
   
   const [formValues, setFormValues] = useState({});
 
