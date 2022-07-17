@@ -3,15 +3,24 @@ import {data} from '../data/projects'
 import { Card, CardProject, Project } from '../assets/styles/components/project'
 import { BiGitBranch } from 'react-icons/bi'
 import { TbWorldUpload } from 'react-icons/tb'
+import ScrollReveal from 'scrollreveal'
 
 export function Projects() {
+
+  ScrollReveal().reveal('.project', { 
+    
+    delay: 500,
+    duration: 700,
+    reset: true
+  });
+
   return (
     <Project>
       <div className="container">
         <h2 className="title">Projetos</h2>
         <Card>
           {data.map((project) => (
-            <CardProject key={project.id}>
+            <CardProject className="project" key={project.id}>
               <img src={project.image} alt={project.description} />
               <h4>{project.title}</h4>
               <div className="tech-card">{project.technologies}</div>

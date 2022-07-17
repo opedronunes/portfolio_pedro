@@ -1,11 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ImgTOP from '../../assets/images/cartoon-dev.png'
-import Cartoon from '../../assets/images/cartoon.png'
 import Emoji from '../../assets/images/emoji.png'
 import { TopSection } from '../../assets/styles/components/top'
+import ScrollReveal from 'scrollreveal'
 
 export function Top() {
+
+  ScrollReveal().reveal('.top', { 
+    
+    delay: 500,
+    distance: '50px',
+    origin: 'left',
+    duration: 700,
+    reset: true
+  });
+  
   return (
     <TopSection>
       <div className="container">

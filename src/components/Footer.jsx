@@ -2,6 +2,7 @@ import React from 'react'
 import { FooterStyled } from '../assets/styles/components/footer'
 
 export function Footer() {
+
   return (
     <FooterStyled>
         <div className="container">

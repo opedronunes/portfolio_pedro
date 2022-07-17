@@ -1,5 +1,6 @@
 import React from 'react'
 import { AboutSection } from '../../assets/styles/components/about'
+import ScrollReveal from 'scrollreveal'
 
 
 export function About() {
@@ -8,6 +9,15 @@ export function About() {
   const dateInit = new Date('2021-05-12')
   const difference = Math.abs((today.getTime() - dateInit.getTime()))
   const year = Math.ceil(difference / (1000 * 60 * 60 * 24 * 365))
+
+  ScrollReveal().reveal('.about-txt', { 
+    
+    delay: 500,
+    distance: '50px',
+    origin: 'bottom',
+    duration: 700,
+    reset: true
+  });
 
   return (
     <AboutSection>

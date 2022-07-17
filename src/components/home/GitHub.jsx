@@ -4,10 +4,29 @@ import { useEffect, useState } from "react"
 import { Git, GitPerfil, GitRepo } from "../../assets/styles/components/git";
 import { useFetch } from "../../hooks/useFetch"
 import { BiCodeAlt } from 'react-icons/bi'
+import ScrollReveal from "scrollreveal";
 
 
 
 export function GitHub() {
+
+  ScrollReveal().reveal('.perfil', { 
+    
+    delay: 500,
+    distance: '80px',
+    origin: 'left',
+    duration: 700,
+    reset: true
+  });
+
+  ScrollReveal().reveal('.repo', { 
+    
+    delay: 500,
+    distance: '80px',
+    origin: 'rigth',
+    duration: 700,
+    reset: true
+  });
 
   const { data: repositories, isFetching } = useFetch ('https://api.github.com/users/PedroNunes-Dev/repos')
   const [userGit, setUserGit] = useState([]);
@@ -40,7 +59,7 @@ export function GitHub() {
         <h2 className="title">GitHub</h2>
         <div className="row">
           <p className="text-danger px-2">{errorMsg}</p>
-          <div className="col-md-6">
+          <div className=" perfil col-md-6">
             <GitPerfil key={userGit.id}>
               <img src={userGit.avatar_url} alt="Foto do github" />
               <h3>{userGit.login}</h3>
