@@ -41,9 +41,10 @@ export function GitHub() {
           <p className="text-danger px-2">{errorMsg}</p>
           <AnimatePresence>
             <motion.div className=" perfil col-md-6"
-            initial={{opacity: 0}}
-            animate={{opacity: 1, x: [-80, 0]}}
-            exit={{opacity: 0}}
+            
+            animate={{opacity: 0}}
+            whileInView={{opacity: 1, x: [-80, 0]}}
+            viewport={{once: true}}
             transition={{duration: 0.8, times: [0, 0.2, 1]}}
             >
               <GitPerfil key={userGit.id}>
@@ -57,9 +58,9 @@ export function GitHub() {
             <div className="repo">
               <AnimatePresence>
                 <motion.ul
-                initial={{opacity: 0}}
-                animate={{opacity: 1, x: [80, 0]}}
-                exit={{opacity: 0}}
+                animate={{opacity: 0}}
+                whileInView={{opacity: 1, x: [80, 0]}}
+                viewport={{once: true}}
                 transition={{duration: 0.8, times: [0, 0.2, 1]}}
                 >
                   { isFetching && <p>Carregando...</p> }
