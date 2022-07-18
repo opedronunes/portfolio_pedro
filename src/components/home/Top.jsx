@@ -15,8 +15,8 @@ export function Top() {
               <motion.div className="top"
               initial={{opacity: 0}}
               animate={{opacity: 1, x: [-80, 0]}}
-              exit={{opacity: 0}}
               transition={{duration: 0.8, times: [0, 0.2, 1]}}
+              exit={{opacity: 0}}
               >
                 <h1>Pedro Nunes</h1>
                 <p>Olá humano!</p>

@@ -45,7 +45,8 @@ export function GitHub() {
             animate={{opacity: 0}}
             whileInView={{opacity: 1, x: [-80, 0]}}
             viewport={{once: true}}
-            transition={{duration: 0.8, times: [0, 0.2, 1]}}
+            transition={{delay: 0.5, duration: 0.8, times: [0, 0.2, 1]}}
+            exit={{ opacity: 0 }}
             >
               <GitPerfil key={userGit.id}>
                 <img src={userGit.avatar_url} alt="Foto do github" />
@@ -59,9 +60,10 @@ export function GitHub() {
               <AnimatePresence>
                 <motion.ul
                 animate={{opacity: 0}}
-                whileInView={{opacity: 1, x: [80, 0]}}
+                whileInView={{opacity: 1}}
                 viewport={{once: true}}
-                transition={{duration: 0.8, times: [0, 0.2, 1]}}
+                transition={{delay: 0.5, duration: 0.8, times: [0, 0.2, 1]}}
+                exit={{ opacity: 0 }}
                 >
                   { isFetching && <p>Carregando...</p> }
                   {repositories?.slice(0, 4).map(repo => {

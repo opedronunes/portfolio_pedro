@@ -1,5 +1,6 @@
 import React from 'react'
 import { AboutSection } from '../../assets/styles/components/about'
+import { motion } from 'framer-motion'
 
 
 export function About() {
@@ -14,7 +15,13 @@ export function About() {
       <div className="container">
         <div className="about">
           <h2 className="title">Sobre</h2>
-          <div className="about-txt">
+          <motion.div className="about-txt"
+          animate={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          viewport={{once: true}}
+          transition={{delay: 0.5, duration: 0.8, times: [0, 0.2, 1]}}
+          exit={{ opacity: 0 }}
+          >
               <p>Sou <strong>desenvolvedor Web</strong> a <strong>{year} anos</strong>, apaixonado por tecnologias. 
               O único arrependimento que tenho é não ter começado os meus estudos na 
               programação antes. Mas nunca é tarde para adquirir novos conhencimentos, 
@@ -25,7 +32,7 @@ export function About() {
               em <strong>banco de dados com Mysql</strong>, para me tornar um <strong>dev Full Stack</strong>. Paralelamente, 
               estou estudando por conta própria <strong>ReactJs e consumo de API's</strong> com os Hooks dessa Biblioteca 
               para entregar uma aplicação dinâmica e performática.</p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </AboutSection>

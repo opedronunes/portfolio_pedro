@@ -10,4 +10,3 @@ http. Ou seja, os dados retornados fucam em cache por X tempo.<br>
 ->React Query: Além do controle de cache, esta implementa várias outras funcionalidades. Esta é 
 a utilizada neste projeto.
 
-## npm i react-query

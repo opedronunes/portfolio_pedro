@@ -6,16 +6,22 @@ padding: 20px 0;
 `
 
 export const Card = styled.div`
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 15px;
+display: grid;
+grid-gap: 10px;
+
+@media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 `
 
 export const CardProject = styled.div`
 display: flex;
 flex-direction: column;
-max-width: 400px;
+height: 100%;
 padding: 8px;
 border-radius: 16px;
 background: var(--color-gray1);
