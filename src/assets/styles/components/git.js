@@ -63,15 +63,12 @@ h3
 img
 {
     max-width: 380px;
-    //border-radius: 50%;
-    //border: 1px solid var(--color-green1);
+    border: 1px solid var(--color-green1);
     width: 100%;
     padding: 4px;
     box-shadow: 0px 0px 12px 2px var(--color-green1);
-    //background: var(--color-green2);
-    background: linear-gradient(105deg, var(--color-green3) 10%, var(--color-green2));
-    object-fit: cover;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    border-radius: 55% 45% 70% 30% / 30% 30% 70% 70%;
+    background: linear-gradient(105deg, var(--color-green3), var(--color-green2) 50%);
 }
 `
 export const GitRepo = styled.div`
