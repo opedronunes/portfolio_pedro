@@ -1,8 +1,34 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import React from 'react'
+import { React, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import Emoji from '../../assets/images/emoji.png'
 import { TopSection } from '../../assets/styles/components/top'
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel'
+
+
+import Foto1 from '../../assets/images/banner-01.jpg';
+import Foto2 from '../../assets/images/banner-02.jpg';
+import Foto3 from '../../assets/images/banner-03.jpg';
+
+const carouselImg = [
+  {
+    id: 1,
+    Img: Foto1,
+    alt: "Banner escrito, criação de sites responsivos."
+  },
+  {
+    id: 2,
+    Img: Foto2,
+    alt: "Banner escrito, criação de LandingPages."
+  },
+  {
+    id: 3,
+    Img: Foto3,
+    alt: "Banner escrito, criação de Sites institucionais."
+  },
+];
 
 export function Top() {
   
@@ -37,7 +63,16 @@ export function Top() {
             </div>
           </div>
         </div>
-      </div>
+        <div className="carousel">
+          <Carousel autoPlay infiniteLoop={true} showThumbs={false} interval={4000} showStatus={false} showIndicators={false}>
+            {carouselImg.map((carolImg) => (
+              <div key={carolImg.id}>
+                <img src={carolImg.Img} alt={carolImg.alt} />
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </div>  
     </TopSection>
   )
 }

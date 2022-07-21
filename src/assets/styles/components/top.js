@@ -56,6 +56,16 @@ h1
     
 }
 
+.carousel
+{
+    margin: 3rem 0;
+}
+
+.carousel img
+{
+    border-radius: 5px;
+}
+
 @keyframes float {
   0% {
     transform: translatey(0px);
