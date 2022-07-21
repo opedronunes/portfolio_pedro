@@ -64,7 +64,7 @@ export function Top() {
           </div>
         </div>
         <div className="carousel">
-          <Carousel autoPlay infiniteLoop={true} showThumbs={false} interval={4000} showStatus={false} showIndicators={false}>
+          <Carousel autoPlay infiniteLoop={true} showThumbs={false} interval={3000} showStatus={false} showIndicators={false}>
             {carouselImg.map((carolImg) => (
               <div key={carolImg.id}>
                 <img src={carolImg.Img} alt={carolImg.alt} />
