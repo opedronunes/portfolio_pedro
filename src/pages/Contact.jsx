@@ -50,7 +50,7 @@ export function Contact() {
                 <ul key={social.id} className="social">
                   <li>
                     <div className="icon-social">{social.Icon}</div>
-                    <a href={social.link}>{social.name}</a>
+                    <a href={social.link} target="_blank">{social.name}</a>
                   </li>
                 </ul>
               ))}
