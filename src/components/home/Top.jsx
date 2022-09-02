@@ -44,8 +44,9 @@ export function Top() {
               transition={{duration: 0.8, times: [0, 0.2, 1]}}
               exit={{opacity: 0}}
               >
+                <h3>Olá humano!</h3>
+                <small>Me chamo,</small>
                 <h1>Pedro Nunes</h1>
-                <p>Olá humano!</p>
                 <p>Sou um <strong>desenvolvedor Web</strong>. Em constante <strong>evoluçao</strong>.</p>
                 <p>Pronto para <strong>aprender</strong> e <strong>contribuir</strong>!</p>
                 

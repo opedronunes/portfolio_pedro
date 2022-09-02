@@ -21,7 +21,7 @@ section
     transition: all .3s;
 }
 
-.techIcons:hover, .icon:hover
+.techIcons:hover
 {
     color: var(--color-green2);
 }

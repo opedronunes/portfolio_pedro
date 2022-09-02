@@ -9,7 +9,7 @@ padding: 20px 0;
 
 h1
 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -42,6 +42,15 @@ h1
 .top
 {
     flex-direction: column;
+}
+
+.top h3{
+    font-weight: bold;
+}
+
+:is(.top) h3 ,p, small{
+    margin: 0;
+    padding: 0;
 }
 
 .top-img img
