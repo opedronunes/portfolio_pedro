@@ -37,24 +37,26 @@ padding: 20px 0;
 }
 .header-tabs h4{
   font-size: 24px;
+  font-weight: bold;
   margin: 0;
 }
 .header-tabs small{
   margin: 0;
 }
-:is(#content1, #content2) p:nth-child(1){
-  color: var(--color-green2);
-  margin: 20px 0;
+#content1 p:nth-child(2), #content2 p:nth-child(2){
+    color: var(--color-green2);
+    margin: 20px 0;
 }
+
 @media (min-width:320px) and (max-width:480px) {
 
   #btn-tabs{
     flex-direction: row;
-    padding: 1rem;
+    padding: 1rem 0;
   }
   #btn-tabs button{
     font-size: 1rem;
-    padding: 8px 8px;
+    padding: 15px 8px;
     border-left: none;
     border-bottom: 1px solid var(--color-gray1);
   }
@@ -67,7 +69,7 @@ padding: 20px 0;
 
   #btn-tabs{
     flex-direction: row;
-    padding: 1rem;
+    padding: 1rem 0;
   }
   #btn-tabs button{
     font-size: 1rem;

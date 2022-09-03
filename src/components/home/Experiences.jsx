@@ -31,11 +31,11 @@ item.addEventListener('click', activeLink));
   return (
     <ExperienceStyled>
       <div className="container">
-        <h2>Experiências</h2>
+        <h2 className="title">Experiências</h2>
         <div className="row">
           <div className="col-md-3">
             <div id="btn-tabs">
-              <button className="list active" data-id="content1">Freelance</button>
+              <button className="list active" data-id="content1">Freelancer</button>
               <button className="list" data-id="content2">Nonô Transportes</button>
             </div>
           </div>
@@ -44,7 +44,7 @@ item.addEventListener('click', activeLink));
 
             <div id="content1">
               <div className="header-tabs">
-                <h4>Criação de sistemas Web</h4>
+                <h4>Web Developer</h4>
                 <small>Jan 2021 - Atual</small>
               </div>
               <p>Freelancer</p>
