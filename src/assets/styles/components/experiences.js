@@ -4,9 +4,6 @@ export const ExperienceStyled = styled.section`
 
 padding: 20px 0;
 
-.content-tabs{
-    display: none;
-}
 #btn-tabs{
   display: flex;
   flex-direction: column;
@@ -22,10 +19,14 @@ padding: 20px 0;
   width: 100%;
   color: var(--color-text);
   text-align: left;
+  transition: all 0.3s;
+
 }
 #btn-tabs button.active {
   border-left: 1px solid var(--color-green2);
   background: var(--color-gray1);
+  transition: all 0.3s;
+  border-radius: 0 3px 3px 0;
 }
 
 .header-tabs
@@ -43,7 +44,15 @@ padding: 20px 0;
 .header-tabs small{
   margin: 0;
 }
-#content1 p:nth-child(2), #content2 p:nth-child(2){
+.content{
+  display: none;
+  transition: all 0.3s;
+}
+.active-content {
+  display: block;
+  transition: all 0.3s;
+}
+.content p:nth-child(2){
     color: var(--color-green2);
     margin: 20px 0;
 }

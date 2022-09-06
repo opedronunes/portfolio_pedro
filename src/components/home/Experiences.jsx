@@ -1,32 +1,14 @@
 import React from 'react'
+import { useState } from 'react';
 import { ExperienceStyled } from '../../assets/styles/components/experiences';
 
 export function Experiences() {
 
-let btn = document.querySelectorAll('button')
-let tabs = document.querySelectorAll('.tabs > div')
+  const [toggleState, setToggleState] = useState(1);
 
-btn.forEach(function(click){
-  click.addEventListener('click', () => {
-    tabs.forEach((tab) => {
-      tab.classList.add('content-tabs')
-    })
-
-    let tabId = click.getAttribute('data-id')
-    let tab = document.querySelector("#" + tabId)
-    tab.classList.remove('content-tabs')
-
-  })
-});
-
-const list = document.querySelectorAll('.list');
-function activeLink(){
-    list.forEach((item) =>
-    item.classList.remove('active'));
-    this.classList.add('active');
-}
-list.forEach((item) =>
-item.addEventListener('click', activeLink));
+    const toggleTab = (index) => {
+      setToggleState(index);
+    }
 
   return (
     <ExperienceStyled>
@@ -35,14 +17,24 @@ item.addEventListener('click', activeLink));
         <div className="row">
           <div className="col-md-3">
             <div id="btn-tabs">
-              <button className="list active" data-id="content1">Freelancer</button>
-              <button className="list" data-id="content2">Nonô Transportes</button>
+              <button 
+              className={toggleState === 1 ? "list active" : ""}
+              onClick={() => toggleTab(1)}
+              >
+                Freelancer
+              </button>
+              <button 
+              className={toggleState === 2 ? "list active" : ""}
+              onClick={() => toggleTab(2)}
+              >
+                Nonô Transportes
+              </button>
             </div>
           </div>
 
           <div className="tabs col-md-9">
 
-            <div id="content1">
+            <div className={toggleState === 1 ? "content active-content" : "content"}>
               <div className="header-tabs">
                 <h4>Web Developer</h4>
                 <small>Jan 2021 - Atual</small>
@@ -52,8 +44,8 @@ item.addEventListener('click', activeLink));
                 Criando soluções para empresas com a criação de sites responsivos e dinâmicos.
               </p>
             </div>
-            
-            <div id="content2" className="content-tabs">
+
+            <div className={toggleState === 2 ? "content active-content" : "content"}>
               <div className="header-tabs">
                 <h4>Gerente administrativo</h4>
                 <small>Jun 2021 - Atual</small>
