@@ -72,6 +72,7 @@ padding: 20px 0;
   #btn-tabs button.active {
     border-left: none;
     border-bottom: 1px solid var(--color-green2);
+    border-radius: 3px 3px 0 0;
   }
 }
 @media (min-width:480.2px) and (max-width:680px){
@@ -90,6 +91,7 @@ padding: 20px 0;
   #btn-tabs button.active {
     border-left: none;
     border-bottom: 1px solid var(--color-green2);
+    border-radius: 3px 3px 0 0;
   }
 }
 `
