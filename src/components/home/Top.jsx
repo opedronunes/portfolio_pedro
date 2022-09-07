@@ -47,7 +47,7 @@ export function Top() {
                 <h3>Olá humano!</h3>
                 <small>Me chamo,</small>
                 <h1>Pedro Nunes</h1>
-                <p>Sou um <strong>desenvolvedor Web</strong>. Em constante <strong>evoluçao</strong>.</p>
+                <p>Sou <strong>desenvolvedor Web</strong>. Em constante <strong>evoluçao</strong>.</p>
                 <p>Pronto para <strong>aprender</strong> e <strong>contribuir</strong>!</p>
                 
                 <div className="top-links">

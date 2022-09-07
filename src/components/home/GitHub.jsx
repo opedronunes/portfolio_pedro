@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 export function GitHub() {
 
-  const { data: repositories, isFetching } = useFetch ('https://api.github.com/users/PedroNunes-Dev/repos')
+  const { data: repositories, isFetching } = useFetch ('https://api.github.com/users/PedroNunes-Dev/repos');
   const [userGit, setUserGit] = useState([]);
   const [errorMsg, setErrorMsg] = useState("");
 

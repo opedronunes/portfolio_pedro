@@ -5,6 +5,8 @@ import { BiGitBranch } from 'react-icons/bi'
 import { TbWorldUpload } from 'react-icons/tb'
 import { motion, AnimatePresence } from 'framer-motion'
 
+import imgCard1 from '../assets/images/rusch.png'
+
 export function Projects() {
 
   return (

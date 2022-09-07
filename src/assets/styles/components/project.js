@@ -30,7 +30,7 @@ box-shadow: var(--shadow);
 img
 {
     width: 100%;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 3px 3px;
 }
 h4
 {
