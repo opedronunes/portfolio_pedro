@@ -3,34 +3,6 @@ import styled from "styled-components";
 export const Project = styled.section`
 display: flex;
 padding: 20px 0;
-
-#card-test{
-    display: flex;
-    gap: 10px;
-    padding: 20px 0;
-    
-}
-.card-content{
-    display: flex;
-    align-items: center;
-    border: 1px solid red;
-    position: relative;
-}
-.card-content img{
-    max-width: 50%;
-}
-.card-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 70%;
-    height: 10rem;
-    border: 1px solid green;
-    right: 0;
-    text-align: center;
-}
 `
 
 export const Card = styled.div`
