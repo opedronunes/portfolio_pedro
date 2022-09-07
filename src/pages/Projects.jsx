@@ -5,12 +5,30 @@ import { BiGitBranch } from 'react-icons/bi'
 import { TbWorldUpload } from 'react-icons/tb'
 import { motion, AnimatePresence } from 'framer-motion'
 
+import imgCard1 from '../assets/images/rusch.png';
+
 export function Projects() {
 
   return (
     <Project>
       <div className="container">
         <h2 className="title">Projetos</h2>
+        <div id="card-test">
+          <div className="card-content">
+            <img src={imgCard1} alt="" />
+            <div className="card-body">
+              <h4>Titulo</h4>
+              <p>desciption</p>
+              <div className="card-technologies">
+                stacks
+              </div>
+              <div className="card-links">
+                <a href="">Link1</a>
+                <a href="">Link2</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <Card>
           <AnimatePresence>
             {data.map((project) => (
