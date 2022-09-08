@@ -21,19 +21,19 @@ export function Header() {
                     <ul>
                         <li>
                             <NavLink
-                                className={({isActive}) => (isActive ? 'active' : '')}
+                                className={({isActive}) => (isActive ? 'active' : 'underline')}
                                 to={'/'}
                             >início
                             </NavLink>
                         </li>
                         <li>
                             <NavLink 
-                                className={({isActive}) => (isActive ? 'active' : '')}
+                                className={({isActive}) => (isActive ? 'active' : 'underline')}
                                 to={'/projects'}>Projetos
                             </NavLink></li>
                         <li>
                             <NavLink 
-                                className={({isActive}) => (isActive ? 'active' : '')}
+                                className={({isActive}) => (isActive ? 'active' : 'underline')}
                                 to={'/contact'}>Contato
                             </NavLink></li>
                     </ul>

@@ -48,13 +48,31 @@ li a
 
 li a.active{
     border-bottom: 1px solid var(--color-text);
-    
 }
 
-li a:hover
-{
-    opacity: 0.8;
+.underline{
+  position: relative;
 }
+
+.underline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-text);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
 `
 
 export const Toogle = styled.nav`
