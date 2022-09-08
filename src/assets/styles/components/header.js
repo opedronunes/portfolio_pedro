@@ -46,6 +46,11 @@ li a
     transition: all .3s;
 }
 
+li a.active{
+    border-bottom: 1px solid var(--color-text);
+    
+}
+
 li a:hover
 {
     opacity: 0.8;
@@ -102,6 +107,10 @@ ul
     text-transform: uppercase;
     font-size: 1.5rem;
     transition: all .3s;
+}
+
+.link-mobile li a.active{
+    border-bottom: 1px solid var(--color-text);
 }
 
 .link-mobile a:hover

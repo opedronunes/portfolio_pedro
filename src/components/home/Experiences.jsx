@@ -29,13 +29,13 @@ export function Experiences() {
             >
               <div id="btn-tabs">
                 <button 
-                className={toggleState === 1 ? "list active" : ""}
+                className={toggleState === 1 ? "active" : ""}
                 onClick={() => toggleTab(1)}
                 >
                   Freelancer
                 </button>
                 <button 
-                className={toggleState === 2 ? "list active" : ""}
+                className={toggleState === 2 ? "active" : ""}
                 onClick={() => toggleTab(2)}
                 >
                   Nonô Transportes

@@ -1,5 +1,5 @@
 import{ useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { List, X } from 'phosphor-react';
 
 import { HeaderStyled, Navbar, Toogle } from "../assets/styles/components/header"
@@ -19,9 +19,23 @@ export function Header() {
                     </div>
                     
                     <ul>
-                        <li><Link to={'/'}>início</Link></li>
-                        <li><Link to={'/projects'}>Projetos</Link></li>
-                        <li><Link to={'/contact'}>Contato</Link></li>
+                        <li>
+                            <NavLink
+                                className={({isActive}) => (isActive ? 'active' : '')}
+                                to={'/'}
+                            >início
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink 
+                                className={({isActive}) => (isActive ? 'active' : '')}
+                                to={'/projects'}>Projetos
+                            </NavLink></li>
+                        <li>
+                            <NavLink 
+                                className={({isActive}) => (isActive ? 'active' : '')}
+                                to={'/contact'}>Contato
+                            </NavLink></li>
                     </ul>
 
                 </Navbar>
@@ -42,9 +56,30 @@ export function Header() {
                                 </a>
                             </div>
                             <div className="link-mobile">
-                                <li><Link to={'/'} onClick={() => setVisibility(false)}>Início</Link></li>
-                                <li><Link to={'/projects'} onClick={() => setVisibility(false)}>Projetos</Link></li>
-                                <li><Link to={'/contact'} onClick={() => setVisibility(false)}>Contato</Link></li>
+                                <li>
+                                    <NavLink 
+                                        to={'/'} 
+                                        className={({isActive}) => (isActive ? 'active' : '')}
+                                        onClick={() => setVisibility(false)}
+                                    >Início
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink 
+                                        to={'/projects'} 
+                                        className={({isActive}) => (isActive ? 'active' : '')}
+                                        onClick={() => setVisibility(false)}
+                                    >Projetos
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink 
+                                    className={({isActive}) => (isActive ? 'active' : '')}
+                                        to={'/contact'} 
+                                        onClick={() => setVisibility(false)}
+                                    >Contato
+                                    </NavLink>
+                                </li>
                             </div>
                         </ul>
                     }
