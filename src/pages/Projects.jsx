@@ -5,14 +5,36 @@ import { BiGitBranch } from 'react-icons/bi'
 import { TbWorldUpload } from 'react-icons/tb'
 import { motion, AnimatePresence } from 'framer-motion'
 
-import imgCard1 from '../assets/images/rusch.png'
+import { useFetch } from '../hooks/useFetch'
 
 export function Projects() {
+
+  const { data: repos, isFetching } = useFetch ('https://api.github.com/users/PedroNunes-Dev/repos');
 
   return (
     <Project>
       <div className="container">
         <h2 className="title">Projetos</h2>
+        {/*
+          <div id="card">
+
+          { isFetching && <p>Carregando...</p> }
+          {repos?.map(repo => {
+            return(
+              <div className="card_repo" key={repo.id}>
+                <h4>{repo.name}</h4>
+                <a href={repo.html_url}>Repositorio</a>
+                <a href={repo.homepage}>Deploy</a>
+                <p>{repo.language}</p>
+                <p>{repo.topics}</p>
+                <p>{repo.description}</p>
+              </div>
+            )
+          })}
+        </div>
+        */}
+        
+
         <Card>
           <AnimatePresence>
             {data.map((project) => (
