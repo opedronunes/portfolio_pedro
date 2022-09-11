@@ -9,17 +9,17 @@ import { useFetch } from '../hooks/useFetch'
 
 export function Projects() {
 
-  const { data: repos, isFetching } = useFetch ('https://api.github.com/users/PedroNunes-Dev/repos');
+  const { data: repos, isFetching } = useFetch ('https://api.github.com/users/opedronunes/repos');
 
   return (
     <Project>
       <div className="container">
         <h2 className="title">Projetos</h2>
-        {/*
-          <div id="card">
-
+        
+        {/* 
+        <div id="card">
           { isFetching && <p>Carregando...</p> }
-          {repos?.map(repo => {
+          {repos?.slice(2,5).map(repo => {
             return(
               <div className="card_repo" key={repo.id}>
                 <h4>{repo.name}</h4>
@@ -33,6 +33,9 @@ export function Projects() {
           })}
         </div>
         */}
+          
+        
+
         
 
         <Card>

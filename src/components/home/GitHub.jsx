@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 export function GitHub() {
 
-  const { data: repositories, isFetching } = useFetch ('https://api.github.com/users/PedroNunes-Dev/repos');
+  const { data: repositories, isFetching } = useFetch ('https://api.github.com/users/opedronunes/repos');
   const [userGit, setUserGit] = useState([]);
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -18,7 +18,7 @@ export function GitHub() {
 
    function getApiUser(){
     
-     axios.get('https://api.github.com/users/PedroNunes-Dev', {
+     axios.get('https://api.github.com/users/opedronunes', {
 
     })
       .then(response => {
@@ -84,7 +84,7 @@ export function GitHub() {
               </AnimatePresence>
               <div className="card-rodape">
                 <strong>Repositórios: {userGit.public_repos} +</strong>
-                <a href="https://github.com/PedroNunes-Dev?tab=repositories" target="_blank" rel="noreferrer">Ver todos</a>
+                <a href="https://github.com/opedronunes?tab=repositories" target="_blank" rel="noreferrer">Ver todos</a>
               </div>
 
             </div>
