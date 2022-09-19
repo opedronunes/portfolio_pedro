@@ -23,7 +23,6 @@ export function GitHub() {
     })
       .then(response => {
         setUserGit(response.data);
-        console.log(response);
       })
       .catch(error => {
         console.log(error)

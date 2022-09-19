@@ -4,6 +4,7 @@ import { Card, CardProject, Project } from '../assets/styles/components/project'
 import { BiGitBranch } from 'react-icons/bi'
 import { TbWorldUpload } from 'react-icons/tb'
 import { motion, AnimatePresence } from 'framer-motion'
+import { FolderOpen } from 'phosphor-react'
 
 import { useFetch } from '../hooks/useFetch'
 
@@ -14,30 +15,7 @@ export function Projects() {
   return (
     <Project>
       <div className="container">
-        <h2 className="title">Projetos</h2>
-        
-        {/* 
-        <div id="card">
-          { isFetching && <p>Carregando...</p> }
-          {repos?.slice(2,5).map(repo => {
-            return(
-              <div className="card_repo" key={repo.id}>
-                <h4>{repo.name}</h4>
-                <a href={repo.html_url}>Repositorio</a>
-                <a href={repo.homepage}>Deploy</a>
-                <p>{repo.language}</p>
-                <p>{repo.topics}</p>
-                <p>{repo.description}</p>
-              </div>
-            )
-          })}
-        </div>
-        */}
-          
-        
-
-        
-
+        <h2 className="title">Pricipais Projetos</h2>
         <Card>
           <AnimatePresence>
             {data.map((project) => (
@@ -62,6 +40,28 @@ export function Projects() {
             ))}
           </AnimatePresence>
         </Card>
+
+        <div id="git_repo">
+          <h2 className="title">GitHub</h2>
+          { isFetching && <p>Carregando...</p> }
+          {repos?.slice(0,5).map(repo => {
+            return(
+              <div className="card_repo" key={repo.id}>
+                <li className="card_repo_item">
+                  <div className="card_repo_icon">
+                    <FolderOpen size={32} />
+                  </div>
+                  <a href={repo.html_url} target="_blank" rel="noreferrer">
+                    <h4>{repo.name}</h4>
+                    <p>{repo.description}</p>
+                    <p>Stack: {repo.language}</p>
+                  </a>
+                </li>
+              </div>
+            )
+          })}
+        </div>
+
       </div>
     </Project>
   )

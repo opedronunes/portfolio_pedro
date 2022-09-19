@@ -10,7 +10,6 @@ export function LandingPage() {
     <main>
       <Top />
       <Technology />
-      <GitHub />
       <Experiences />
       <About />
     </main>

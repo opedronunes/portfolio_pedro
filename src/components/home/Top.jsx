@@ -1,16 +1,18 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { React, useMemo } from 'react'
+import { React} from 'react'
 import { Link } from 'react-router-dom'
-import Emoji from '../../assets/images/emoji.png'
 import { TopSection } from '../../assets/styles/components/top'
+import { Carousel } from 'react-responsive-carousel'
+import { GitUser } from './GitUser'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel'
 
 
 import Foto1 from '../../assets/images/banner-01.jpg';
 import Foto2 from '../../assets/images/banner-02.jpg';
 import Foto3 from '../../assets/images/banner-03.jpg';
+
+
 
 const carouselImg = [
   {
@@ -45,7 +47,7 @@ export function Top() {
               exit={{opacity: 0}}
               >
                 <h3>Olá humano!</h3>
-                <small>Me chamo,</small>
+                <strong>Me chamo,</strong>
                 <h1>Pedro Nunes</h1>
                 <p>Sou <strong>desenvolvedor Web</strong>. Em constante <strong>evoluçao</strong>.</p>
                 <p>Pronto para <strong>aprender</strong> e <strong>contribuir</strong>!</p>
@@ -59,11 +61,10 @@ export function Top() {
           </div>
 
           <div className="col-md-6">
-            <div className="top-img">
-              <img src={Emoji} alt="" />
-            </div>
+              <GitUser />
           </div>
         </div>
+        
         <div className="carousel">
           <Carousel autoPlay infiniteLoop={true} showThumbs={false} interval={3000} showStatus={false} showIndicators={false}>
             {carouselImg.map((carolImg) => (
