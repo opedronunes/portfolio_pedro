@@ -15,7 +15,7 @@ export function Projects() {
   return (
     <Project>
       <div className="container">
-        <h2 className="title">Pricipais Projetos</h2>
+        <h2 className="title">Principais Projetos</h2>
         <Card>
           <AnimatePresence>
             {data.map((project) => (
