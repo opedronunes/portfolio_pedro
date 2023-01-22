@@ -6,13 +6,13 @@ export const data = [
     {
         id: 1,
         name: 'GitHub',
-        link: 'https://github.com/PedroNunes-Dev',
+        link: 'https://github.com/opedronunes',
         Icon: <FaIcons.FaGithubAlt size={32}/>,
     },
     {
         id: 2,
         name: 'Linkedin',
-        link: 'https://www.linkedin.com/in/pedro-filipe-3311b51b4',
+        link: 'https://www.linkedin.com/in/pedrofilipedev',
         Icon: <FaIcons.FaLinkedinIn size={32} />,
     },
     {
