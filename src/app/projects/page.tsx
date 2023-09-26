@@ -38,7 +38,6 @@ export default function Project(): Projects | any{
             </div>
             <div>
                 <h4 className="my-2 text-2xl font-bold">Repositório</h4>
-                {/*@ts-expect-error Async Server Component */}
                 <Repos/>
             </div>
         </div>

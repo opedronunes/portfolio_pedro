@@ -1,9 +1,9 @@
 
 import dynamic from 'next/dynamic'
-import { Technology } from '../../components/home/Technology'
-import Social from '../components/Social'
+import * as Technology from '../components/home/Technology'
 import { Metadata } from 'next'
-import { User } from '../components/User'
+import { User } from './components/User'
+import Social from './components/Social'
 
 
 export const metadata: Metadata = {
@@ -36,10 +36,9 @@ export default function Page() {
                             </div>
                             <Social />
                         </div>
-                        {/*@ts-expect-error Async Server Component */}
                         <User />
                     </div>
-                    <Technology />
+                    <Technology.Technology />
                 </div>
             </div>
         )
