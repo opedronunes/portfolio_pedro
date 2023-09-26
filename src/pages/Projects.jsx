@@ -9,7 +9,7 @@ import { FolderOpen } from 'phosphor-react'
 
 import { useFetch } from '../hooks/useFetch'
 
-export function Projects() {
+export default function Projects() {
 
   const { data: repos, isFetching } = useFetch ('https://api.github.com/users/opedronunes/repos');
 

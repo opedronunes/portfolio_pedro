@@ -6,7 +6,7 @@ import { ContactStyled, FormStyled } from '../assets/styles/components/contact'
 import { data } from '../data/social'
  
 
-export function Contact() {
+export default function Contact() {
   
   /*
   const [formValues, setFormValues] = useState({});
@@ -36,7 +36,7 @@ export function Contact() {
     return <div className="container">
       <div className="d-flex flex-column align-items-center justify-content-center">
         <h2>Obrigado pela mensagem!</h2>
-        <a className="btn btn-success py-2" href="/contact">Voltar</a>
+        <a className="py-2 btn btn-success" href="/contact">Voltar</a>
       </div>
     </div>
     //window.location.href = "/contact";

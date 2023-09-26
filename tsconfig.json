@@ -27,8 +27,11 @@
     "next-env.d.ts",
     "./dist/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/app/layout.jsx", "src/app/projects/page.tsx"  ],
+    "**/*.tsx",
+    "src/app/layout.jsx",
+    "src/app/projects/page.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

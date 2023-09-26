@@ -9,7 +9,6 @@ import GlobalStyled from '../assets/styles/global'
 import { Footer } from "../components/Footer"
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'),
   title: {
     default: 'Portfólio',
     template: 'Portifólio | %s'

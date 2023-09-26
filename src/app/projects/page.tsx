@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     keywords: ['GitHub', 'Projetos', 'repositório', 'tecnologias']
 }
 
-export default function Project(): Projects | any{
+export default function Projects(): Projects | any{
     return (
         <div className="container px-2 mx-auto">
             <div className="my-4">
@@ -25,7 +25,7 @@ export default function Project(): Projects | any{
                             <Image src={project.image} alt={project.description} width={500} height={500} className="rounded-md" />
                             <h4 className="my-4 text-xl font-semibold text-green-600">{project.title}</h4>
                             <div className="flex flex-col h-full gap-3 text-gray-600">
-                                <div className="flex gap-2 text-lg">{project.technologies}</div>
+                                <p className="flex gap-2 text-lg">{project.technologies}</p>
                                 <p>{project.description}</p>
                             </div>
                             <div className="flex items-center gap-3 mt-3">

@@ -1,12 +1,14 @@
 
 import dynamic from 'next/dynamic'
-import * as Technology from '../components/home/Technology'
+
 import { Metadata } from 'next'
 import { User } from './components/User'
 import Social from './components/Social'
+import { Technology } from '../components/home/Technology'
 
 
 export const metadata: Metadata = {
+    metadataBase: new URL('http://localhost:3000'),
     title: 'Home',
     keywords: ['site', 'programador', 'desenvolvedor', 'frontend', 'developer', 'react', 'web', 'responsivo'],
     openGraph: {
@@ -38,7 +40,7 @@ export default function Page() {
                         </div>
                         <User />
                     </div>
-                    <Technology.Technology />
+                    <Technology/>
                 </div>
             </div>
         )
