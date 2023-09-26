@@ -17,26 +17,26 @@ export default function Project(): Projects | any{
     return (
         <div className="container px-2 mx-auto">
             <div className="my-4">
-                <div>Principais Projetos</div>
+                <div className="my-2 text-2xl font-bold">Principais Projetos</div>
                 <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
                     {data.map((project) => (
                         <div className="flex flex-col p-2 shadow-md shadow-gray-950 bg-[rgba(255, 255, 255, 0.1)] rounded-lg backdrop-blur-md" key={project.id}>
                             <Image src={project.image} alt={project.description} width={500} height={500} className="rounded-md" />
-                            <h4 className="font-semibold text-xl my-4 text-green-600">{project.title}</h4>
-                            <div className="flex gap-3 flex-col text-gray-600">
+                            <h4 className="my-4 text-xl font-semibold text-green-600">{project.title}</h4>
+                            <div className="flex flex-col h-full gap-3 text-gray-600">
                                 <div className="flex gap-2 text-lg">{project.technologies}</div>
                                 <p>{project.description}</p>
                             </div>
-                            <div className="flex gap-3 items-center mt-3">
-                                <a href={project.githublink} target="_blank" rel="noreferrer" className="inline-flex px-6 py-2 text-lg text-gray-400 transition-colors border border-gray-400 rounded focus:outline-none hover:bg-green-600 hover:border-green-600 hover:text-gray-200">GitHub</a>
-                                <a href={project.deploylink} target="_blank" rel="noreferrer" className="inline-flex px-6 py-2 text-lg text-gray-400 transition-colors border border-gray-400 rounded focus:outline-none hover:bg-green-600 hover:border-green-600 hover:text-gray-200">Site</a>
+                            <div className="flex items-center gap-3 mt-3">
+                                <a href={project.githublink} target="_blank" rel="noreferrer" className="inline-flex px-6 py-2 text-lg text-gray-400 transition-colors border border-gray-600 rounded focus:outline-none hover:bg-green-600 hover:border-green-600 hover:text-gray-200">GitHub</a>
+                                <a href={project.deploylink} target="_blank" rel="noreferrer" className="inline-flex px-6 py-2 text-lg text-gray-400 transition-colors border border-gray-600 rounded focus:outline-none hover:bg-green-600 hover:border-green-600 hover:text-gray-200">Site</a>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
             <div>
-                <h4>Repositório</h4>
+                <h4 className="my-2 text-2xl font-bold">Repositório</h4>
                 {/*@ts-expect-error Async Server Component */}
                 <Repos/>
             </div>
