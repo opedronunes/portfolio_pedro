@@ -6,6 +6,7 @@ import Image, { StaticImageData } from "next/image"
 import { data } from "../../data/projects"
 import  {Repos}  from "../components/Repo"
 import { Metadata } from "next"
+import Link from "next/link"
 
 export const metadata: Metadata = {
     title: 'Projects',
@@ -28,8 +29,8 @@ export default function Project(): Projects | any{
                                 <p>{project.description}</p>
                             </div>
                             <div className="flex items-center gap-3 mt-3">
-                                <a href={project.githublink} target="_blank" rel="noreferrer" className="inline-flex px-6 py-2 text-lg text-gray-400 transition-colors border border-gray-600 rounded focus:outline-none hover:bg-green-600 hover:border-green-600 hover:text-gray-200">GitHub</a>
-                                <a href={project.deploylink} target="_blank" rel="noreferrer" className="inline-flex px-6 py-2 text-lg text-gray-400 transition-colors border border-gray-600 rounded focus:outline-none hover:bg-green-600 hover:border-green-600 hover:text-gray-200">Site</a>
+                                <Link href={project.githublink} target="_blank" rel="noreferrer" className="inline-flex px-6 py-2 text-lg text-gray-400 transition-colors border border-gray-600 rounded focus:outline-none hover:bg-green-600 hover:border-green-600 hover:text-gray-200">GitHub</Link>
+                                <Link href={project.deploylink} target="_blank" rel="noreferrer" className="inline-flex px-6 py-2 text-lg text-gray-400 transition-colors border border-gray-600 rounded focus:outline-none hover:bg-green-600 hover:border-green-600 hover:text-gray-200">Site</Link>
                             </div>
                         </div>
                     ))}
