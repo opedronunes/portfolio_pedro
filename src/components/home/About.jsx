@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { AboutSection } from '../../assets/styles/components/about'
 import { motion } from 'framer-motion'

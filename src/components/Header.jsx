@@ -1,5 +1,6 @@
+'use client'
+import Link from "next/link";
 import{ useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import { List, X } from 'phosphor-react';
 
 import { HeaderStyled, Navbar, Toogle } from "../assets/styles/components/header"
@@ -9,33 +10,27 @@ export function Header() {
     const [visibility, setVisibility] = useState(false)
 
     return (
-        <HeaderStyled>
-            <div className="container">
+        <header className="flex items-center justify-between h-16">
+            <div className="container mx-auto">
                 <Navbar>
-                    <div className="logo">
-                        <Link to={'/'}>
-                        {"<Web Developer/>"}
+                    <div className="text-lg font-extrabold leading-tight text-gray-200 uppercase">
+                        <Link href={'/'}>
+                        {"< Web Developer />"}
                         </Link>
                     </div>
-                    
                     <ul>
                         <li>
-                            <NavLink
+                            <Link
                                 className={({isActive}) => (isActive ? 'active' : 'underline')}
-                                to={'/'}
+                                href={'/'}
                             >início
-                            </NavLink>
+                            </Link>
                         </li>
                         <li>
-                            <NavLink 
+                            <Link 
                                 className={({isActive}) => (isActive ? 'active' : 'underline')}
-                                to={'/projects'}>Projetos
-                            </NavLink></li>
-                        <li>
-                            <NavLink 
-                                className={({isActive}) => (isActive ? 'active' : 'underline')}
-                                to={'/contact'}>Contato
-                            </NavLink></li>
+                                href={'/contact'}>Contato
+                            </Link></li>
                     </ul>
 
                 </Navbar>
@@ -57,28 +52,28 @@ export function Header() {
                             </div>
                             <div className="link-mobile">
                                 <li>
-                                    <NavLink 
-                                        to={'/'} 
+                                    <Link 
+                                        href={'/'} 
                                         className={({isActive}) => (isActive ? 'active' : '')}
                                         onClick={() => setVisibility(false)}
                                     >Início
-                                    </NavLink>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <NavLink 
-                                        to={'/projects'} 
+                                    <Link 
+                                        href={'/projects'} 
                                         className={({isActive}) => (isActive ? 'active' : '')}
                                         onClick={() => setVisibility(false)}
                                     >Projetos
-                                    </NavLink>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <NavLink 
+                                    <Link 
                                     className={({isActive}) => (isActive ? 'active' : '')}
-                                        to={'/contact'} 
+                                        href={'/contact'} 
                                         onClick={() => setVisibility(false)}
                                     >Contato
-                                    </NavLink>
+                                    </Link>
                                 </li>
                             </div>
                         </ul>
@@ -86,6 +81,6 @@ export function Header() {
                 </Toogle>
                 
             </div>
-        </HeaderStyled>
+        </header>
     )
 }

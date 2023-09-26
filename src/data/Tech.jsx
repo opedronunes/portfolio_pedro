@@ -5,24 +5,36 @@ import * as DiIcons from 'react-icons/di';
 
 export const data = [
     {
-        text: 'HTML5',
-        Icon: <FaIcons.FaHtml5/>
+        text: 'PHP',
+        Icon: <DiIcons.DiPhp/>
     },
     {
-        text: 'CSS3',
-        Icon: <FaIcons.FaCss3Alt />
+        text: 'Laravel',
+        Icon: <DiIcons.DiLaravel/>,
     },
     {
-        text: 'JavaScript',
-        Icon: <SiIcons.SiJavascript/>
+        text: 'MySql',
+        Icon: <GrIcons.GrMysql/>,
     },
     {
-        text: 'Bootstrap',
-        Icon: <FaIcons.FaBootstrap/>
+        text: 'Postgres',
+        Icon: <DiIcons.DiPostgresql/>
+    },
+    {
+        text: 'Node',
+        Icon: <DiIcons.DiNodejs/>,
     },
     {
         text: 'React',
         Icon: <FaIcons.FaReact/>
+    },
+    {
+        text: 'Tailwind',
+        Icon: <SiIcons.SiTailwindcss/>
+    },
+    {
+        text: 'Bootstrap',
+        Icon: <FaIcons.FaBootstrap/>
     },
     {
         text: 'Styled components',
@@ -37,11 +49,7 @@ export const data = [
         Icon: <FaIcons.FaGithub/>,
     },
     {
-        text: 'MySql',
-        Icon: <GrIcons.GrMysql/>,
-    },
-    {
-        text: 'PHP',
-        Icon: <DiIcons.DiPhp/>
+        text: 'Rsponsive',
+        Icon: <DiIcons.DiResponsive/>,
     },
 ];

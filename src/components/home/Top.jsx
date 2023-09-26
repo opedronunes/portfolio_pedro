@@ -1,3 +1,4 @@
+'use client'
 import { motion, AnimatePresence } from 'framer-motion'
 import { React} from 'react'
 import { Link } from 'react-router-dom'
@@ -11,6 +12,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Foto1 from '../../assets/images/banner-01.jpg';
 import Foto2 from '../../assets/images/banner-02.jpg';
 import Foto3 from '../../assets/images/banner-03.jpg';
+import Image from 'next/image'
 
 
 
@@ -69,7 +71,7 @@ export function Top() {
           <Carousel autoPlay infiniteLoop={true} showThumbs={false} interval={3000} showStatus={false} showIndicators={false}>
             {carouselImg.map((carolImg) => (
               <div key={carolImg.id}>
-                <img src={carolImg.Img} alt={carolImg.alt} />
+                <Image src={carolImg.Img} alt={carolImg.alt} />
               </div>
             ))}
           </Carousel>

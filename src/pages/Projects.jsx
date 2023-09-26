@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import {data} from '../data/projects'
 import { Card, CardProject, Project } from '../assets/styles/components/project'

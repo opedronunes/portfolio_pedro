@@ -1,4 +1,4 @@
-
+'use client'
 import React from 'react'
 import { useState } from 'react';
 import { ExperienceStyled } from '../../assets/styles/components/experiences';

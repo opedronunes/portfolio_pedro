@@ -1,3 +1,4 @@
+'use client'
 import { createGlobalStyle } from "styled-components";
 import waveTop from '../images/wave-top.png'
 
@@ -26,12 +27,6 @@ html
 }
 body
 {
-    background: var(--bg-dark);
-    background-image: url(${waveTop});
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: -10;
     color: var(--color-text);
     font-family: 'Source Sans Pro', sans-serif;
     
