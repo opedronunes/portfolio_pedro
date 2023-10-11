@@ -1,12 +1,10 @@
-
-
-import { Metadata } from "next"
-import React from "react"
 import './globals.css'
-import { Header } from "../components/Header"
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-import GlobalStyled from '../assets/styles/global'
-import { Footer } from "../components/Footer"
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
@@ -17,6 +15,7 @@ export const metadata: Metadata = {
   description: 'Desenvolvedor front-end, criação de páginas web responsivas e modernas,',
   abstract: 'Developer front-end, creation of modern and responsive websites.',
 }
+
 export default function RootLayout({
   children,
 }: {
@@ -24,15 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#121214]">
-        <div id="root">
-          <GlobalStyled/>
-          <div className="top-0 bg-no-repeat bg-header-image">
-            <Header/>
-            {children}
-            <Footer/>
-          </div>
-        </div>
+      <body className={`inter.className bg-gray-950`}>
+        <main className="top-0 bg-no-repeat md:bg-contain bg-header-image">
+          <Header />
+          {children}
+          <Footer/>
+        </main>
       </body>
     </html>
   )

@@ -3,7 +3,7 @@ import * as SiIcons from 'react-icons/si';
 import * as GrIcons from 'react-icons/gr';
 import * as DiIcons from 'react-icons/di';
 
-export const data = [
+export const tech = [
     {
         text: 'PHP',
         Icon: <DiIcons.DiPhp/>
@@ -52,4 +52,4 @@ export const data = [
         text: 'Rsponsive',
         Icon: <DiIcons.DiResponsive/>,
     },
-];
+]
