@@ -21,7 +21,7 @@ export async function Repos() {
                             <li className="list-none">
                                 <Link href={repo.html_url} target="_blank" rel="noreferrer" className="">
                                     <h4 className="text-2xl font-semibold text-green-600">{repo.name}</h4>
-                                    <div className="text-sm">
+                                    <div className="text-sm text-gray-400">
                                         <p>{repo.description}</p>
                                         <p>Stack: {repo.language}</p>
                                     </div>
@@ -31,7 +31,7 @@ export async function Repos() {
                     )
                 })}
             </div>
-        <Link href="https://github.com/opedronunes?tab=repositories" target="_blank" className="flex items-center justify-center w-full my-4 font-bold text-center transition-colors hover:text-green-600">
+        <Link href="https://github.com/opedronunes?tab=repositories" target="_blank" className="flex items-center justify-center w-full my-4 text-gray-200 font-bold text-center transition-colors hover:text-green-600">
             Ver todos
         </Link>
         </div>

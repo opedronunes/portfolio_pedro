@@ -42,8 +42,8 @@ export default function Home() {
           <div className="text-gray-500 text-justify">Sou desenvolvedor Web com <strong className="text-green-600">3 anos de experiência</strong>, apaixonado por tecnologias. 
           O único arrependimento que tenho é não ter começado os meus estudos na programação antes. Mas nunca é tarde 
           para adquirir novos conhencimentos, neste sentido estou focado em aprender cada vez mais, disposto a conhecer 
-          <strong className="text-green-600">novas linguagens de programação</strong>, <strong className="text-green-600">trabalhar em equipes e ajudar o próximo a evoluir</strong> também! 
-          Atualmente estou estudando <strong className="text-green-600">Back-End com Node.js</strong> e aprimorando meus conhecimentos em banco de dados com <strong className="text-green-600">Postgres</strong>, 
+          <strong className="text-green-600"> novas linguagens de programação</strong>, <strong className="text-green-600">trabalhar em equipes e ajudar o próximo a evoluir</strong> também! 
+          Atualmente estou estudando <strong className="text-green-600">Back-End com Node.js</strong> e aprimorando meus conhecimentos em banco de dados com <strong className="text-green-600">PostgreSQL</strong>, 
           Paralelamente, desenvolvo projetos como freelancer e alguns projetos pessoais que uso no meu dia a dia com o 
           intuito de sempre entregar uma <strong className="text-green-600">aplicação dinâmica e performática</strong> para o cliente final.
           </div>
