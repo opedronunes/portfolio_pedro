@@ -1,12 +1,12 @@
 
 type Projects = {
-    image: string | StaticImageData,
+    image: string[] | string,
 }
 import Image, { StaticImageData } from "next/image"
 import  {Repos}  from "../components/Repo"
 import { Metadata } from "next"
 import Link from "next/link"
-//import Solution from "../components/Solution"
+import Solution from "../components/Solution"
 
 export const metadata: Metadata = {
     title: 'Projects',
@@ -20,7 +20,7 @@ export default function Projects(): Projects | any{
             <div className="my-4">
                 <div className="my-2 text-gray-200">
                     <h4 className=" text-2xl font-bold">Principais projetos</h4>
-                    Em produção...
+                    <Solution/>
                 </div>
             </div>
             <div>
