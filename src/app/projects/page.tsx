@@ -1,11 +1,6 @@
 
-type Projects = {
-    image: string[] | string,
-}
-import Image, { StaticImageData } from "next/image"
 import  {Repos}  from "../components/Repo"
 import { Metadata } from "next"
-import Link from "next/link"
 import Solution from "../components/Solution"
 
 export const metadata: Metadata = {
@@ -14,7 +9,7 @@ export const metadata: Metadata = {
     keywords: ['GitHub', 'Projetos', 'repositório', 'tecnologias']
 }
 
-export default function Projects(): Projects | any{
+export default function Projects(){
     return (
         <div className="container px-2 mx-auto">
             <div className="my-4">

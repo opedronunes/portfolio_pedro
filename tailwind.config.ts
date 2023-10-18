@@ -13,6 +13,7 @@ const config: Config = {
       },
       backgroundImage: {
         'header-image': "url('/images/wave-top.png')",
+        'not-found': "url('/images/nt.png')",
       },
       colors: {
         'gray-950': '#121214',

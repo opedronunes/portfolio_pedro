@@ -2,9 +2,9 @@
 import * as FaIcons from 'react-icons/fa'
 import * as DiIcons from 'react-icons/di';
 import { StaticImageData } from 'next/image';
-import Boleto1 from '../../public/images/boleto1.png'
-import Boletos2 from '../../public/images/boletos2.png'
-import Boletos3 from '../../public/images/boletos3.png'
+//import Boleto1 from '../../public/images/boleto1.png'
+//import Boletos2 from '../../public/images/boletos2.png'
+//import Boletos3 from '../../public/images/boletos3.png'
 
 export const project = [
     

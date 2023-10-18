@@ -20,6 +20,10 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
+  const today = new Date()
+  const dateInit = new Date('2021-05-12')
+  const difference = Math.abs((today.getTime() - dateInit.getTime()))
+  const year = Math.ceil(difference / (1000 * 60 * 60 * 24 * 365))
   return (
     <div className="bg-[rgba(255, 255, 255, 0.1)] rounded-lg backdrop-blur-md">
       <div className="container px-2 mx-auto">
@@ -39,7 +43,7 @@ export default function Home() {
         <Tecnology />
         <div>
           <h3 className="font-semibold text-green-600 text-2xl my-4">Sobre</h3>
-          <div className="text-gray-500 text-justify">Sou desenvolvedor Web com <strong className="text-green-600">3 anos de experiência</strong>, apaixonado por tecnologias. 
+          <div className="text-gray-500 text-justify">Sou desenvolvedor Web com <strong className="text-green-600">{year} anos de experiência</strong>, apaixonado por tecnologias. 
           O único arrependimento que tenho é não ter começado os meus estudos na programação antes. Mas nunca é tarde 
           para adquirir novos conhencimentos, neste sentido estou focado em aprender cada vez mais, disposto a conhecer 
           <strong className="text-green-600"> novas linguagens de programação</strong>, <strong className="text-green-600">trabalhar em equipes e ajudar o próximo a evoluir</strong> também! 

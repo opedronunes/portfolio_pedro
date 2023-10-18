@@ -1,10 +1,15 @@
 import { project } from "@/data/Project";
 import Image, { StaticImageData } from "next/image"
+import Link from "next/link";
 
 
 export default function Solution(){
     return (
         <section>
+            <div className="divide-x-[1px] divide-gray-400 flex justify-center my-4">
+                <Link className="p-1 text-gray-200 hover:text-green-600 transition-colors" href={"/"}>Home</Link>
+                <Link className="p-1 text-gray-200 hover:text-green-600 transition-colors" href={"/contacts"}>Contato</Link>
+            </div>
             {project.map((item)=> (
                 <div className="md:flex gap-2 p-3 bg-[rgba(255, 255, 255, 0.1)] rounded-lg backdrop-blur-md" key={item.id}>
                     <Image src={item.image} alt={item.description} width={500} height={500} className="rounded md:w-[50%]"/>
