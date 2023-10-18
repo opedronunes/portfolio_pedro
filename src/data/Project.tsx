@@ -16,7 +16,7 @@ export const project = [
         technologies: ['PHP -', ' Laravel -', ' Bootstrap'],
         githublink: "Private",
         deploylink: "https://contas.nonotransporteselocacoes.com.br/",
-        description: "Trabalho profissional realizado como freelancer em que foi criado sistema web para gerenciamento de boletos, vencimentos e realtórios."
+        description: "Trabalho profissional realizado como freelancer em que foi criado sistema web para gerenciamento de boletos, vencimentos e relatórios."
     },
     {
         id: 1,
