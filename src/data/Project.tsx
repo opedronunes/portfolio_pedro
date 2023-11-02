@@ -11,11 +11,11 @@ export const project = [
     {
         id: 0,
         title: "Controle de Boletos",
-        image:  "/images/boletos2.png",
+        image:  "/images/nono.jpeg",
         //technologies: [<DiIcons.DiPhp/>, <DiIcons.DiLaravel/>, <FaIcons.FaBootstrap/>],
         technologies: ['PHP -', ' Laravel -', ' Bootstrap'],
-        githublink: "Private",
-        deploylink: "https://contas.nonotransporteselocacoes.com.br/",
+        githublink: "",
+        deploylink: "",
         description: "Trabalho profissional realizado como freelancer em que foi criado sistema web para gerenciamento de boletos, vencimentos e relatórios."
     },
     {
@@ -24,7 +24,7 @@ export const project = [
         image: "/images/nono.png",
         //technologies: [<DiIcons.DiPhp/>, <FaIcons.FaJs/>, <FaIcons.FaBootstrap/>],
         technologies: ['PHP -', ' Javascript -', ' Bootstrap'],
-        githublink: "https://github.com/PedroNunes-Dev/nonotransportes",
+        githublink: "https://github.com/opedronunes/nonotransportes",
         deploylink: "https://nonotransporteselocacoes.com.br/",
         description: "Trabalho profissional realizado como freelancer em que foi criado site institucional para uma empresa no ramo de locação de equipamentos e serviços."
     },
@@ -34,7 +34,7 @@ export const project = [
         image: '/images/rusch.png',
         //technologies: [<DiIcons.DiPhp/>, <FaIcons.FaJs/>, <FaIcons.FaBootstrap/>],
         technologies: ['PHP -', ' Javascript -', ' Bootstrap'],
-        githublink: "https://github.com/PedroNunes-Dev/rusch",
+        githublink: "https://github.com/opedronunes/rusch",
         deploylink: "https://ruschconstrucoes.com.br",
         description: "Trabalho profissional realizado como freelancer, para um cliente no ramo de locaçoes de máquinas e equipamentos."
     },

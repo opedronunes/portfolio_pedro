@@ -15,7 +15,7 @@ export async function Repos() {
     return (
         <div>
             <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
-                {repos?.slice(0, 6).map(repo => {
+                {repos?.slice(0, 12).map(repo => {
                     return (
                         <div className="border border-dashed border-green-600 bg-[rgba(255, 255, 255, 0.1)] rounded-lg backdrop-blur-md p-3" key={repo.id}>
                             <li className="list-none">

@@ -3,6 +3,8 @@ import { User } from './components/User'
 import type { Metadata } from 'next'
 import Tecnology from './components/Technology'
 import Carousel from './components/Carousel'
+import { project } from '@/data/Project'
+import Solution from './components/Solution'
 
 
 export const metadata: Metadata = {
@@ -39,6 +41,7 @@ export default function Home() {
           </div>
           <User />
         </div>
+        <Solution/>
         <Carousel/>
         <Tecnology />
         <div>
