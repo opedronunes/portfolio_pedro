@@ -26,13 +26,12 @@ export async function User(){
                             <div className="flex justify-center gap-3 md:justify-start">
                                 <p className="m-0">Soluções: {user.public_repos}+</p>
                                 <p className="text-gray-400">|</p>
-                                <Link href="https://github.com/opedronunes?tab=repositories" target="_blank" className="transition-colors hover:text-green-600">
-                                    Ver todas
+                                <Link href="/projects" className="transition-colors hover:text-green-600">
+                                    Ver mais
                                 </Link>
                             </div>
-                            <div className="flex justify-center gap-2 my-3">
-                                <Link href="https://wa.me/5561996681439" className="animate-pulse inline-flex px-6 py-2 text-lg text-gray-200 transition-colors border rounded focus:outline-none bg-green-600 border-green-600" target="_blank">Saiba +</Link>
-                                <Link href="/projects" className="inline-flex px-6 py-2 text-lg animate-pulse text-gray-200 transition-colors border rounded focus:outline-none bg-green-600 border-green-600">Projetos</Link>
+                            <div className="flex justify-start w-full gap-2 my-3">
+                                <Link href="https://wa.me/5561996681439" className="w-full justify-center animate-pulse inline-flex px-6 py-2 text-lg text-gray-200 transition-colors border rounded focus:outline-none bg-green-600 border-green-600" target="_blank">Explorar +</Link>
                             </div>
                         </div>
                     </div>
