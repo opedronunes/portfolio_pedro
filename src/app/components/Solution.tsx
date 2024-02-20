@@ -28,7 +28,7 @@ export default function Solution() {
                                 <a href={item.deploylink} target="_blank" rel="noreferrer" className="inline-flex px-4 py-1 text-lg hover:text-gray-200 text-green-600 transition-colors border rounded focus:outline-none hover:bg-green-600 border-green-600"> Site</a>
                             )}
                             {!item.githublink && !item.deploylink && (
-                                <p className="text-red-500 text-sm">Projeto privado!</p>
+                                <a href={item.previa} className="inline-flex px-4 py-1 text-lg hover:text-gray-200 text-green-600 transition-colors border rounded focus:outline-none hover:bg-green-600 border-green-600"> Prévia</a>
                             )}
                         </div>
                     </div>
