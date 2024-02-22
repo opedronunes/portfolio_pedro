@@ -32,19 +32,19 @@ export const faturamento = [
     {
         id: 5,
         title: "Ordem de serviço - OS",
-        text: "Um dos fatores primordiais do sistema, através da Ordem de serviço podemos analisar os lucros dos equimentos, nela é incluso os colaboradores, clientes, equipamentos e colaboradores. É o ponto de partida para ser gerado uma fatura ao cliente em que foi prestado o serviço ou locação de equipamento. Podemos indentificar no seu cadastro que existe muitos campos para detalhar ao máximo o que foi feito na contratação do serviço. Após cadastro da O.S, é listado e identificado automatimente como <strong>Aberta</strong> na página de situação, aguardando para ser gerado a fatura.",
+        text: "Um dos fatores primordiais do sistema, através da Ordem de serviço podemos analisar os lucros dos equimentos, nela é incluso os colaboradores, clientes, equipamentos e colaboradores. É o ponto de partida para ser gerado uma fatura ao cliente em que foi prestado o serviço ou locação de equipamento. Podemos indentificar no seu cadastro que existe muitos campos para detalhar ao máximo o que foi feito na contratação do serviço. Após cadastro da O.S, é listado e identificado automatimente como Aberta na página de situação, aguardando para ser gerado a fatura.",
         image:  "/images/os.png",
     },
     {
         id: 6,
         title: "Situações",
-        text: "Ao ser adicionado no sistema a O.S,o usuário é redirecionado para a tela de situação, identificada com a cor laranja que significa <strong>Aberta</strong>, nesta situação aparece um botão no lado esquedo que abre um modal para gerar a fatura, após gerar, automaticamente o sistema a identifica como <strong>Faturada</strong> caracterizada pela cor azul. Neste mesmo modal de fatura podemos adicionar mais de uma O.S, ou seja, dependendo do serviço que foi feito, poderá incluir mais O.S para identicar a quantidade de equipamentos utilizado ou serviços feito.",
+        text: "Ao ser adicionado no sistema a O.S,o usuário é redirecionado para a tela de situação, identificada com a cor laranja que significa Aberta, nesta situação aparece um botão no lado esquedo que abre um modal para gerar a fatura, após gerar, automaticamente o sistema a identifica como Faturada caracterizada pela cor azul. Neste mesmo modal de fatura podemos adicionar mais de uma O.S, ou seja, dependendo do serviço que foi feito, poderá incluir mais O.S para identicar a quantidade de equipamentos utilizado ou serviços feito.",
         image:  "/images/situacao.png",
     },
     {
         id: 7,
         title: "Faturas",
-        text: "<p>Outro fator promordial do sistema, a fatura é o documento que será entregue ao cliente para conhecimento dos valores cobrado pelo serviço, data de vencimento do pagamento e dados bancário. Dependendo do cliente é necessário gerar um boleto como o valor da fatura, mas isso é feito no banco de preferência da empresa.</p><p>Conta com todos os métodos utilizados no sistema (atualização e exclusão), além da opção de visualizar a fatura e gerar o PDF. Outro detalhe importante é quando for excluído uma fatura, a O.S registrada nela volta a ter o status como <strong>Aberta</strong>, podendo assim ser feita uma nova fatura para ela.</p>",
+        text: "Outro fator promordial do sistema, a fatura é o documento que será entregue ao cliente para conhecimento dos valores cobrado pelo serviço, data de vencimento do pagamento e dados bancário. Dependendo do cliente é necessário gerar um boleto como o valor da fatura, mas isso é feito no banco de preferência da empresa.Conta com todos os métodos utilizados no sistema (atualização e exclusão), além da opção de visualizar a fatura e gerar o PDF. Outro detalhe importante é quando for excluído uma fatura, a O.S registrada nela volta a ter o status como Aberta, podendo assim ser feita uma nova fatura para ela.",
         image:  "/images/fatura.png",
     },
 ];
