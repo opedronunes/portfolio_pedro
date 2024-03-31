@@ -24,8 +24,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`inter.className bg-gray-950`}>
-        <main className="top-0 bg-no-repeat md:bg-contain bg-header-image">
+      <body className={`inter.className bg-bg-primary`}>
+        <main className="top-0 bg-no-repeat md:bg-contain bg-header-image text-gray-400">
           <Header />
           {children}
           <Footer/>

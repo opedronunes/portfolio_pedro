@@ -12,13 +12,17 @@ const config: Config = {
         'animate-ping': 'pulse 1600ms infinite' 
       },
       backgroundImage: {
-        'header-image': "url('/images/wave-top.png')",
+        // 'header-image': "url('/images/svg.png')",
         'not-found': "url('/images/nt.png')",
       },
       colors: {
-        'gray-950': '#121214',
-        'gray-600': '#29292e',
-        'green-600': '#00B37E',
+        'bg-primary': 'var(--bg-primary)',
+        'bg-secondary': 'var(--bg-secondary)',
+        'primary': 'var(--color-primary)',
+        'secondary': 'var(--color-secondary)',
+        'tertiary': 'var(--color-tertiary)',
+        'white': 'var(--color-white)',
+        'texto': 'var(--color-gray)'
       },
     },
   },
