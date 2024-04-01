@@ -27,7 +27,7 @@ export default function Home() {
       <div className="container px-2 mx-auto">
         <section className="py-12">
           <div className="flex px-5 items-center justify-center flex-col">
-            <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-b-lg" alt="hero" src="/images/Sem.png" />
+            <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-b-lg" alt="hero" src="/images/nf.png" />
             <div className="text-center lg:w-2/3 w-full">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-primary">Pedro Nunes - Desenvolvedor Web</h1>
               <p className="leading-relaxed mb-8">Transforme sua visão em realidade digital! Como um programador freelancer especializado em soluções personalizadas, estou aqui para impulsionar o seu negócio para novas alturas online. Desde a criação de landing pages que convertem visitantes em clientes até o desenvolvimento de sistemas inteligentes para otimizar seus processos, estou comprometido em trazer inovação e eficiência para o seu empreendimento. Deixe-me ajudá-lo a destacar-se na internet e alcançar seus objetivos. Juntos, vamos construir uma presença online que seja verdadeiramente impactante. Vamos começar a criar algo incrível hoje!</p>

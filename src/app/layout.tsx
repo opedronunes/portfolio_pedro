@@ -1,9 +1,11 @@
-import { Analytics } from '@vercel/analytics/react';
+
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Analytics from './components/Analytcs'
+import { Suspense } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,9 +30,11 @@ export default function RootLayout({
         <main className="top-0 bg-no-repeat md:bg-contain bg-header-image text-gray-400">
           <Header />
           {children}
-          <Footer/>
+          <Footer />
         </main>
-        <Analytics/>
+        <Suspense>
+          <Analytics />
+        </Suspense>
       </body>
     </html>
   )
