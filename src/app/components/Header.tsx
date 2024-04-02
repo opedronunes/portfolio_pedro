@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
     return (
@@ -10,14 +11,12 @@ export default function Header() {
                     <span className="ml-3 text-xl xl:block lg:hidden">Pedro Nunes</span>
                 </Link>
                 <div className=" inline-flex lg:justify-end ml-5 lg:ml-0">
-                    <Link href={'/contacts'} className="bg-bg-secondary flex items-center p-4 rounded text-base font-semibold uppercase text-tertiary hover:bg-tertiary hover:text-gray-200 transition-colors">
+                    <MobileMenu />
+                    <Link href={'/contacts'} className="hidden bg-bg-secondary md:flex items-center p-4 rounded text-base font-semibold uppercase text-tertiary hover:bg-tertiary hover:text-gray-200 transition-colors">
                         Contato
                     </Link>
                 </div>
             </div>
         </header>
-
-
-
     )
 }

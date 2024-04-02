@@ -46,7 +46,7 @@ export default function Home() {
                 <img className="h-56 rounded w-full object-cover object-center mb-6" src="/images/webdeveloper.png" alt="content" />
                 <h2 className="text-lg text-primary font-medium title-font mb-4">Desenvolvimento Web</h2>
                 <p className="leading-relaxed text-base">Transforme suas ideias em realidade digital com sites responsivos, otimizados para desempenho e usabilidade excepcionais.</p>
-                <Link href={'/services/dw'} className="text-tertiary mt-4 inline-flex items-center transition-transform hover:translate-x-2">Saiba mais
+                <Link href={'/dweb'} className="text-tertiary mt-4 inline-flex items-center transition-transform hover:translate-x-2">Saiba mais
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
@@ -58,7 +58,7 @@ export default function Home() {
                 <img className="h-56 rounded w-full object-cover object-center mb-6" src="/images/appweb.png" alt="content" />
                 <h2 className="text-lg text-primary font-medium title-font mb-4">Desenvolvimento de aplicativos Web</h2>
                 <p className="leading-relaxed text-base">Desenvolvimento de aplicativos web personalizados para atender às necessidades específicas do seu negócio.</p>
-                <Link href={'/services/aw'} className="text-tertiary mt-4 inline-flex items-center transition-transform hover:translate-x-2">Saiba mais
+                <Link href={'/appweb'} className="text-tertiary mt-4 inline-flex items-center transition-transform hover:translate-x-2">Saiba mais
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
@@ -70,7 +70,7 @@ export default function Home() {
                 <img className="h-56 rounded w-full object-cover object-center mb-6" src="images/consulter.png" alt="content" />
                 <h2 className="text-lg text-primary font-medium title-font mb-4">Consultoria em TI</h2>
                 <p className="leading-relaxed text-base">Assessoria especializada em tecnologia da informação para ajudar sua empresa a tomar decisões estratégicas de TI.</p>
-                <Link href={'/services/cti'} className="text-tertiary mt-4 inline-flex items-center transition-transform hover:translate-x-2">Saiba mais
+                <Link href={'/cti'} className="text-tertiary mt-4 inline-flex items-center transition-transform hover:translate-x-2">Saiba mais
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
