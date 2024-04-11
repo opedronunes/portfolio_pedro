@@ -13,6 +13,7 @@ export async function POST(request: Request, res: Response) {
         const transporter = nodemailer.createTransport({
             host: process.env.NEXT_PUBLIC_EMAIL_HOST,
             port: process.env.NEXT_PUBLIC_EMAIL_PORT,
+            secureConnection: false,
             //
             tls: {
             ciphers: "SSLv3",
