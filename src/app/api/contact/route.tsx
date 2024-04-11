@@ -14,6 +14,10 @@ export async function POST(request: Request, res: Response) {
             host: process.env.EMAIL_HOST,
             port: process.env.EMAIL_PORT,
             //
+            tls: {
+            ciphers: "SSLv3",
+            rejectUnauthorized: false,
+        },
             auth: {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS,
