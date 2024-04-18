@@ -11,17 +11,16 @@ export async function POST(request: Request, res: Response) {
 
     try {
         const transporter = nodemailer.createTransport({
-            host: process.env.NEXT_PUBLIC_EMAIL_HOST,
-            port: process.env.NEXT_PUBLIC_EMAIL_PORT,
-            secureConnection: false,
-            //
+            host: process.env.EMAIL_HOST,
+            port: process.env.EMAIL_PORT,
+            secure: false,
             tls: {
             ciphers: "SSLv3",
             rejectUnauthorized: false,
         },
             auth: {
-                user: process.env.NEXT_PUBLIC_EMAIL_USER,
-                pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
             },
         });
 
@@ -30,7 +29,6 @@ export async function POST(request: Request, res: Response) {
             to: 'adm.pedronunes@gmail.com',
             subject: 'Novo Orçamento',
             html: `
-      <h3>New Message:</h3>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Telefone:</strong> ${telefone}</p>
