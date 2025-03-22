@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`inter.className bg-bg-primary`}>
+      <body className={`inter.className bg-background dark`}>
         <main className="top-0 bg-no-repeat md:bg-contain bg-header-image text-gray-400">
           <Header />
           <Breadcrumb

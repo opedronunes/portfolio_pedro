@@ -44,6 +44,9 @@ const MobileMenu = () => {
                             <Link className="block px-4 py-2 text-base font-medium text-gray-900 hover:bg-red-100" href={'/cti'} onClick={() => setIsOpen(false)}>
                                 Consultoria TI
                             </Link>
+                            <Link className="block px-4 py-2 text-base font-medium text-gray-900 hover:bg-red-100" href={'/drone'} onClick={() => setIsOpen(false)}>
+                                Drone
+                            </Link>
                             <Link className="block px-4 py-2 text-base font-medium text-gray-900 hover:bg-red-100" href={'/contacts'} onClick={() => setIsOpen(false)}>
                                 Contato
                             </Link>

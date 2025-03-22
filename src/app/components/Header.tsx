@@ -1,7 +1,10 @@
+'use client'
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+    const pathname = usePathname();
     return (
 
         <header className="body-font">
@@ -11,11 +14,35 @@ export default function Header() {
                     <span className="ml-3 text-xl xl:block lg:hidden">Pedro Nunes</span>
                 </Link>
                 <div className=" inline-flex lg:justify-end ml-5 lg:ml-0">
-                    <MobileMenu />
+                    {[
+                        { href: "/drone", label: "Drone" },
+                        { href: "/contacts", label: "Contato" },
+                    ].map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={`hidden bg-bg-secondary md:flex items-center p-4 rounded text-base font-semibold uppercase text-tertiary transition-colors 
+                            ${pathname === link.href
+                                    ? "bg-tertiary text-white" // Ativo
+                                    : "hover:bg-tertiary hover:text-white"}`
+                            }
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
+
+                </div>
+                <MobileMenu />
+
+                {/* <div className=" inline-flex lg:justify-end ml-5 lg:ml-0">
+                    
+                    <Link href={'/drone'} className="hidden bg-bg-secondary md:flex items-center p-4 rounded text-base font-semibold uppercase text-tertiary hover:bg-tertiary hover:text-gray-200 transition-colors">
+                        Drone
+                    </Link>
                     <Link href={'/contacts'} className="hidden bg-bg-secondary md:flex items-center p-4 rounded text-base font-semibold uppercase text-tertiary hover:bg-tertiary hover:text-gray-200 transition-colors">
                         Contato
                     </Link>
-                </div>
+                </div> */}
             </div>
         </header>
     )
