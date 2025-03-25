@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Analytics from './components/Analytcs'
 import { Suspense } from 'react'
 import Breadcrumb from './components/Breadcrumb'
+import Bw from './components/ButtonWp'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,12 +34,13 @@ export default function RootLayout({
             homeElement={'Home'}
             separator={<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4" viewBox="0 0 256 256"><path d="M128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,144Z"></path></svg>}
             activeClasses='text-tertiary'
-            containerClasses='flex py-2 justify-end container mx-auto px-2 md:px-0 items-center' 
+            containerClasses='flex py-2 justify-end container mx-auto px-2 md:px-0 items-center'
             listClasses='hover:underline font-bold'
             capitalizeLinks
           />
           {children}
           <Footer />
+          <Bw />
         </main>
         <Suspense>
           <Analytics />
